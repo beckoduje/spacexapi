@@ -4,7 +4,11 @@ export default function NavLinks() {
   return (
     <div className="nav-links-container">
       <ul className="nav-links-list">
-        <li></li>
+        <li>About Us</li>
+        <li>Rockets</li>
+        <li>Dragons</li>
+        <li>Launches</li>
+        <li>Crew</li>
       </ul>
       <div className="hambi-links">
         <div className="hambi-cont top">

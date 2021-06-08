@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+
+  .logo-container {
+    width: 200px;
+    cursor: pointer;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  .nav-links-container {
+    display: flex;
+
+    .nav-links-list {
+      display: flex;
+      list-style: none;
+    }
+
+    .hambi-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 3rem;
+
+      .hambi-cont {
+        display: flex;
+
+        .hambi-long {
+          width: 2rem;
+          height: 3px;
+          background: black;
+          margin-right: 0.5rem;
+        }
+
+        .hambi-circle {
+          width: 3px;
+          height: 3px;
+          background: black;
+        }
+      }
+    }
+  }
+}
+
+.nav.sticky-nav {
+  display: none;
+}
