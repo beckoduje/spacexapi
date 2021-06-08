@@ -3,6 +3,8 @@
 @import "./variables";
 @import "./missionSection";
 @import "./nav";
+@import "./logo";
+@import "./mission";
 
 *,
 *::before,
@@ -19,4 +21,5 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color: $primaryTextColor;
 }
