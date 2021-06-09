@@ -59,4 +59,10 @@
 
 .nav.sticky-nav {
   display: none;
+  position: fixed;
+  background: black;
+  z-index: 100;
+  padding: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

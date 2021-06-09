@@ -1,0 +1,19 @@
+.section.recent-launch {
+  background-image: url("../images/rocketLaunching.jpg");
+  background-size: cover;
+
+  .section-shader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    button {
+      align-self: flex-end;
+    }
+
+    .white-box.recent-launch {
+      right: 9rem;
+    }
+  }
+}
