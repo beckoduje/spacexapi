@@ -12,6 +12,8 @@ import RecentLaunch from "./components/RecentLaunch";
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
 
+  console.log(stickyNav);
+
   return (
     <>
       <Nav className="sticky-nav" stickyNav={stickyNav} />

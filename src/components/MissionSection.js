@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import Mission from "./Mission";
 import Nav from "./Nav";
 
@@ -11,11 +11,13 @@ export default function MissionSection(props) {
     threshold: 0.1,
   });
 
-  if (!inView) {
-    props.setStickyNav(true);
-  } else {
-    props.setStickyNav(false);
-  }
+  useEffect(() => {
+    if (!inView) {
+      props.setStickyNav(true);
+    } else {
+      props.setStickyNav(false);
+    }
+  }, [inView]);
 
   return (
     <section ref={ref} className="section mission">
