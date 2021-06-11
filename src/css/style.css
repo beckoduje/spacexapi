@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 .section {
   height: 100vh;
+  /* The image used */
+  background-image: url("../images/sectionMissionAstronaut.jpg");
+  /* Full height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 112%;
 }
 
 .section .section-shader {
@@ -20,12 +28,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.section.mission {
-  background-image: url("../images/sectionMissionAstronaut.jpg");
-  background-size: 112%;
-  background-position: 0 30%;
 }
 
 .nav {
@@ -162,7 +164,9 @@
   border: none;
   outline: none;
   background: white;
-  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
   padding: 1rem;
   border-radius: 20px;
   color: #de572c;

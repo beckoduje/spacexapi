@@ -1,6 +1,18 @@
 .section {
   height: 100vh;
 
+  /* The image used */
+  background-image: url("../images/sectionMissionAstronaut.jpg");
+
+  /* Full height */
+  // height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  background-size: 112%;
+
   .section-shader {
     height: 100%;
     width: 100%;
@@ -14,8 +26,8 @@
   }
 }
 
-.section.mission {
-  background-image: url("../images/sectionMissionAstronaut.jpg");
-  background-size: 112%;
-  background-position: 0 30%;
-}
+// .section.mission {
+//   background-image: url("../images/sectionMissionAstronaut.jpg");
+//   background-size: 112%;
+//   background-position: 0 30%;
+// }

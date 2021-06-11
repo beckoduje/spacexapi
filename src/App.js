@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./css/style.css";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -9,10 +10,12 @@ import Dragon from "./components/Dragon";
 import RecentLaunch from "./components/RecentLaunch";
 
 function App() {
+  const [stickyNav, setStickyNav] = useState(false);
+
   return (
     <>
-      <Nav className="sticky-nav" />
-      <MissionSection />
+      <Nav className="sticky-nav" stickyNav={stickyNav} />
+      <MissionSection setStickyNav={setStickyNav} />
       <FalconNineSection />
       <FalconHeavy />
       <Startship />

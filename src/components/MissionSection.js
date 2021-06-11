@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Mission from "./Mission";
 import Nav from "./Nav";
-// import sectionMissionAstronaut from "..images/sectionMissionAstronaut.jpg";
 
-export default function MissionSection() {
+// iz librarya
+import { useInView } from "react-intersection-observer";
+
+export default function MissionSection(props) {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.1,
+  });
+
+  if (!inView) {
+    props.setStickyNav(true);
+  } else {
+    props.setStickyNav(false);
+  }
+
   return (
-    <section className="section mission">
+    <section ref={ref} className="section mission">
       <div className="section-shader">
         <Nav />
         <Mission />
