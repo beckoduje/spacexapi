@@ -8,11 +8,10 @@ import FalconHeavy from "./components/FalconHeavy";
 import Startship from "./components/Startship";
 import Dragon from "./components/Dragon";
 import RecentLaunch from "./components/RecentLaunch";
+import CrewMembers from "./components/CrewMembers";
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
-
-  console.log(stickyNav);
 
   return (
     <>
@@ -23,6 +22,7 @@ function App() {
       <Startship />
       <Dragon />
       <RecentLaunch />
+      <CrewMembers />
     </>
   );
 }

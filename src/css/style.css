@@ -320,6 +320,73 @@
   right: 9rem;
 }
 
+.section.crew {
+  height: unset;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.91)), to(rgba(0, 0, 0, 0.91))), url("../images/moon2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url("../images/moon2.jpg");
+  background-attachment: unset;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem;
+}
+
+.section.crew h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10rem;
+}
+
+.molecules-container {
+  margin-top: 15rem;
+}
+
+.molecules-container .molecules-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.molecules-container .molecules-row .molecule {
+  margin-right: -65px;
+  margin-bottom: 8px;
+}
+
+.molecules-container .molecules-row .molecule .left {
+  float: left;
+  width: 0;
+  border-right: 75px solid rgba(255, 255, 255, 0.14);
+  border-top: 130px solid transparent;
+  border-bottom: 130px solid transparent;
+}
+
+.molecules-container .molecules-row .molecule .middle {
+  float: left;
+  width: 150px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.molecules-container .molecules-row .molecule .right {
+  float: left;
+  width: 0;
+  border-left: 75px solid rgba(255, 255, 255, 0.14);
+  border-top: 130px solid transparent;
+  border-bottom: 130px solid transparent;
+}
+
+.molecules-container .molecules-row .molecule.middle {
+  margin-top: -130px;
+}
+
 *,
 *::before,
 *::after {

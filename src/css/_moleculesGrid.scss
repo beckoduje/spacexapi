@@ -1,0 +1,46 @@
+.molecules-container {
+  margin-top: 15rem;
+  .molecules-row {
+    display: flex;
+
+    .molecule {
+      //   margin-right: -26px;
+      //   margin-bottom: 4px;
+      margin-right: -65px;
+      margin-bottom: 8px;
+
+      .left {
+        float: left;
+        width: 0;
+        // border-right: 30px solid #6c6;
+        // border-top: 52px solid transparent;
+        // border-bottom: 52px solid transparent;
+        border-right: 75px solid rgba(255, 255, 255, 0.14);
+        border-top: 130px solid transparent;
+        border-bottom: 130px solid transparent;
+      }
+
+      .middle {
+        float: left;
+        // width: 60px;
+        // height: 104px;
+        width: 150px;
+        height: 260px;
+        background: rgba(255, 255, 255, 0.14);
+      }
+
+      .right {
+        float: left;
+        width: 0;
+        border-left: 75px solid rgba(255, 255, 255, 0.14);
+        border-top: 130px solid transparent;
+        border-bottom: 130px solid transparent;
+      }
+    }
+
+    .molecule.middle {
+      //   margin-top: -52px;
+      margin-top: -130px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.section.crew {
+  height: unset;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)),
+    url("../images/moon2.jpg");
+  background-attachment: unset;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15rem;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10rem;
+  }
+}
