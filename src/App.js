@@ -10,6 +10,7 @@ import Dragon from "./components/Dragon";
 import RecentLaunch from "./components/RecentLaunch";
 import CrewMembers from "./components/CrewMembers";
 import Subscription from "./components/Subscription";
+import Footer from "./components/Footer";
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       <RecentLaunch />
       <CrewMembers />
       <Subscription />
+      <Footer />
     </>
   );
 }

@@ -345,51 +345,75 @@
   margin-bottom: 10rem;
 }
 
-.molecules-container {
-  margin-top: 15rem;
+/* ----------------------------------------- */
+.container {
+  width: 1000px;
+  line-height: 1.3;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
-.molecules-container .molecules-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+ol.even {
+  position: relative;
+  left: 13.63636rem;
 }
 
-.molecules-container .molecules-row .molecule {
-  margin-right: -65px;
-  margin-bottom: 8px;
+ol.odd {
+  position: relative;
+  margin-top: -6%;
+  margin-bottom: -6%;
 }
 
-.molecules-container .molecules-row .molecule .left {
-  float: left;
-  width: 0;
-  border-right: 75px solid rgba(255, 255, 255, 0.14);
-  border-top: 130px solid transparent;
-  border-bottom: 130px solid transparent;
-}
-
-.molecules-container .molecules-row .molecule .middle {
-  float: left;
-  width: 150px;
-  height: 260px;
+.hex {
+  position: relative;
+  margin: 2rem auto;
+  width: 15rem;
+  height: 25.5rem;
+  border-radius: 1rem/0.5rem;
   background: rgba(255, 255, 255, 0.14);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: inline-block;
+  margin-right: 11.53846rem;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
-.molecules-container .molecules-row .molecule .right {
-  float: left;
-  width: 0;
-  border-left: 75px solid rgba(255, 255, 255, 0.14);
-  border-top: 130px solid transparent;
-  border-bottom: 130px solid transparent;
+.hex:before,
+.hex:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: "";
 }
 
-.molecules-container .molecules-row .molecule.middle {
-  margin-top: -130px;
+.hex:before {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.hex:after {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.hex:hover {
+  background: #f58787;
+  cursor: pointer;
 }
 
 .section.subscription {
   height: unset;
   background: black;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.section.subscription form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,8 +424,75 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15rem;
-  margin-bottom: 15rem;
+}
+
+.section.subscription form label {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 8rem;
+}
+
+.section.subscription form .input-btn-container {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section.subscription form .input-btn-container input {
+  background: rgba(255, 255, 255, 0.24);
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+  padding: 1rem;
+  width: 50%;
+  height: 5.5rem;
+  border-radius: 12px;
+  margin-right: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.section.subscription form .input-btn-container .submit-subscription-btn {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  padding: 1rem;
+  width: 10%;
+  height: 5.5rem;
+  border-radius: 12px;
+}
+
+footer {
+  height: unset;
+  background: black;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
 }
 
 *,
@@ -423,5 +514,17 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   background: black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+footer {
+  height: unset;
+  background: black;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
