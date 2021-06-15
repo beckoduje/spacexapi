@@ -325,7 +325,7 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.91)), to(rgba(0, 0, 0, 0.91))), url("../images/moon2.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.91), rgba(0, 0, 0, 0.91)), url("../images/moon2.jpg");
   background-attachment: unset;
-  background-size: cover;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,6 +387,23 @@
   margin-top: -130px;
 }
 
+.section.subscription {
+  height: unset;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
 *,
 *::before,
 *::after {
@@ -405,5 +422,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: white;
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */
