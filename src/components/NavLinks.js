@@ -1,14 +1,25 @@
 import React from "react";
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 export default function NavLinks() {
   return (
     <div className="nav-links-container">
       <ul className="nav-links-list">
-        <li>About Us</li>
-        <li>Rockets</li>
-        <li>Dragons</li>
-        <li>Launches</li>
-        <li>Crew</li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/rockets">Rockets</Link>
+        </li>
+        <li>
+          <Link to="/dragons">Dragons</Link>
+        </li>
+        <li>
+          <Link to="/launches">Launches</Link>
+        </li>
+        <li>
+          <Link to="/crew">Crew</Link>
+        </li>
       </ul>
       <div className="hambi-links">
         <div className="hambi-cont top">

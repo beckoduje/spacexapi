@@ -1,33 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/style.css";
-import Nav from "./components/Nav";
+import Home from "./components/Home";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MissionSection from "./components/MissionSection";
-import FalconNineSection from "./components/FalconNineSection";
-import FalconHeavy from "./components/FalconHeavy";
-import Startship from "./components/Startship";
-import Dragon from "./components/Dragon";
-import RecentLaunch from "./components/RecentLaunch";
-import CrewMembers from "./components/CrewMembers";
-import Subscription from "./components/Subscription";
-import Footer from "./components/Footer";
 
 function App() {
-  const [stickyNav, setStickyNav] = useState(false);
-
   return (
-    <>
-      <Nav className="sticky-nav" stickyNav={stickyNav} />
-      <MissionSection setStickyNav={setStickyNav} />
-      <FalconNineSection />
-      <FalconHeavy />
-      <Startship />
-      <Dragon />
-      <RecentLaunch />
-      <CrewMembers />
-      <Subscription />
-      <Footer />
-    </>
+    <Router>
+      <Route path="/">
+        <Home />
+      </Route>
+    </Router>
   );
 }
 
