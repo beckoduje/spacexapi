@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Logo() {
   return (
     <div className="logo-container">
-      <a>
+      <Link to="/">
         <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
           <title>SpaceX Logo</title>
           <g className="letter_s">
@@ -63,7 +64,7 @@ export default function Logo() {
             ></path>
           </g>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -10,12 +10,12 @@ import CrewMembers from "./CrewMembers";
 import Subscription from "./Subscription";
 import Footer from "./Footer";
 
-export default function Home() {
-  const [stickyNav, setStickyNav] = useState(false);
+export default function Home(props) {
+  // const [stickyNav, setStickyNav] = useState(false);
   return (
     <div>
-      <Nav className="sticky-nav" stickyNav={stickyNav} />
-      <MissionSection setStickyNav={setStickyNav} />
+      <Nav className="sticky-nav" stickyNav={props.stickyNav} />
+      <MissionSection setStickyNav={props.setStickyNav} />
       <FalconNineSection />
       <FalconHeavy />
       <Startship />
