@@ -503,6 +503,8 @@ footer ul li {
 .section.about-header {
   background-image: url("../images/earthAtmosphere.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  height: unset;
 }
 
 .section.about-header .section-shader {
@@ -522,6 +524,14 @@ footer ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.section.about-header .section-shader nav {
+  margin-bottom: 15vw;
+}
+
+.section.about-header .section-shader .about-message.one {
+  margin-bottom: 40rem;
 }
 
 .about-message {
@@ -570,6 +580,76 @@ footer ul li {
   height: 113%;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 12px;
+}
+
+.section.company-info {
+  background-image: url("../images/companyInfoImg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: unset;
+}
+
+.section.company-info .section-shader {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.leaders-container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 30vw;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+}
+
+.leaders-container .leader {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+}
+
+.leaders-container .leader figure {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  overflow: hidden;
+}
+
+.leaders-container .leader figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.leaders-container .leader .leader-name {
+  font-size: 2.3rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.leaders-container .leader .leader-position {
+  font-size: 2.8rem;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
 }
 
 *,

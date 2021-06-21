@@ -1,6 +1,8 @@
 .section.about-header {
   background-image: url("../images/earthAtmosphere.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  height: unset;
 
   .section-shader {
     height: 100%;
@@ -12,5 +14,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    nav {
+      margin-bottom: 15vw;
+    }
+
+    .about-message.one {
+      margin-bottom: 40rem;
+    }
   }
 }

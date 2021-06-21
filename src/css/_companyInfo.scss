@@ -1,0 +1,10 @@
+.section.company-info {
+  background-image: url("../images/companyInfoImg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: unset;
+
+  .section-shader {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
