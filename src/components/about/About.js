@@ -1,6 +1,6 @@
 import React from "react";
-import AboutHeader from "./AboutHeader";
-import CompanyInfo from "./CompanyInfo";
+import AboutHeader from "./aboutHeader/AboutHeader";
+import CompanyInfo from "./companyInfo/CompanyInfo";
 
 export default function About() {
   return (

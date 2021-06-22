@@ -1,5 +1,5 @@
 import React from "react";
-import atom from "../images/atom.png";
+import atom from "../../../images/atom.png";
 
 export default function AboutMessageTwo() {
   return (

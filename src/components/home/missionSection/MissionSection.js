@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Mission from "./Mission";
-import Nav from "./Nav";
+import Nav from "../../nav/Nav";
 
 // iz librarya
 import { useInView } from "react-intersection-observer";

@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+import Nav from "../../nav/Nav";
 import AboutMessageOne from "./AboutMessageOne";
 import AboutMessageTwo from "./AboutMessageTwo";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import gwynneProfileImg from "../images/GwynneShotwell.jpg";
-import muskProfileImg from "../images/elon-musk.jpg";
-import mullerProfileImg from "../images/tom-muller.jpg";
+import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
+import muskProfileImg from "../../../images/elon-musk.jpg";
+import mullerProfileImg from "../../../images/tom-muller.jpg";
 
 export default function Leaders() {
   return (
@@ -14,8 +14,10 @@ export default function Leaders() {
             alt="Gwynne Shotwell"
           />
         </figure>
-        <div className="leader-name">name</div>
-        <div className="leader-position">position</div>
+        <div className="leader-info-container">
+          <div className="leader-name">name</div>
+          <div className="leader-position">position</div>
+        </div>
       </div>
       <div className="leader middle">
         <figure>
@@ -25,8 +27,10 @@ export default function Leaders() {
             alt="Elon Musk"
           />
         </figure>
-        <div className="leader-name">name</div>
-        <div className="leader-position">position</div>
+        <div className="leader-info-container">
+          <div className="leader-name">name</div>
+          <div className="leader-position">position</div>
+        </div>
       </div>
       <div className="leader">
         <figure>
@@ -36,8 +40,10 @@ export default function Leaders() {
             alt="Tom Muller"
           />
         </figure>
-        <div className="leader-name">name</div>
-        <div className="leader-position">position</div>
+        <div className="leader-info-container">
+          <div className="leader-name">name</div>
+          <div className="leader-position">position</div>
+        </div>
       </div>
     </div>
   );

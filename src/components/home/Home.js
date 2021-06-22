@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Nav from "./Nav";
-import MissionSection from "./MissionSection";
+import Nav from "../nav/Nav";
+import MissionSection from "./missionSection/MissionSection";
 import FalconNineSection from "./FalconNineSection";
 import FalconHeavy from "./FalconHeavy";
 import Startship from "./Startship";
 import Dragon from "./Dragon";
 import RecentLaunch from "./RecentLaunch";
-import CrewMembers from "./CrewMembers";
+import CrewMembers from "./crewSection/CrewMembers";
 import Subscription from "./Subscription";
 import Footer from "./Footer";
 
