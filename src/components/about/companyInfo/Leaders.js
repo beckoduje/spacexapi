@@ -3,17 +3,11 @@ import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
 import muskProfileImg from "../../../images/elon-musk.jpg";
 import mullerProfileImg from "../../../images/tom-muller.jpg";
 
+import { companyData } from "../../../companyData";
+console.log(companyData);
+console.log(companyData[0]);
+
 export default function Leaders() {
-  const [companyData, setCompanyData] = useState();
-
-  useEffect(() => {
-    fetch("https://api.spacexdata.com/v4/company")
-      .then((response) => response.json())
-      .then((data) => {
-        setCompanyData(data);
-      });
-  }, []);
-
   return (
     <div className="leaders-container">
       <div className="leader">
@@ -25,7 +19,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{companyData.coo}</div>
+          {/* <div className="leader-name">{companyData[0].coo}</div> */}
           <div className="leader-position">Coo</div>
         </div>
       </div>
@@ -38,7 +32,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{companyData.ceo}</div>
+          {/* <div className="leader-name">{companyData[0].ceo}</div> */}
           <div className="leader-position">Ceo&amp;Cto</div>
         </div>
       </div>
@@ -51,7 +45,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{companyData.cto_propulsion}</div>
+          {/* <div className="leader-name">{companyData[0].cto_propulsion}</div> */}
           <div className="leader-position">Cto propulsion</div>
         </div>
       </div>
