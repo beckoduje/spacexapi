@@ -513,7 +513,7 @@ footer ul li {
   background: rgba(0, 0, 0, 0.1);
   padding: 10rem;
   padding-top: 3rem;
-  padding-bottom: 7rem;
+  padding-bottom: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,6 +591,7 @@ footer ul li {
 
 .section.company-info .section-shader {
   background: rgba(0, 0, 0, 0.6);
+  padding-top: 20rem;
 }
 
 .leaders-container {
@@ -601,7 +602,8 @@ footer ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
 }
 
 .leaders-container .leader {
@@ -651,6 +653,17 @@ footer ul li {
 .leaders-container .leader.middle {
   -webkit-transform: scale(1.05) translateY(-15px);
           transform: scale(1.05) translateY(-15px);
+}
+
+.logo-container {
+  width: 240px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.logo-container a {
+  width: 100%;
 }
 
 *,

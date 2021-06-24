@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
 import muskProfileImg from "../../../images/elon-musk.jpg";
 import mullerProfileImg from "../../../images/tom-muller.jpg";
-
-import { companyData } from "../../../companyData";
-console.log(companyData);
-console.log(companyData[0]);
+import { DataContext } from "../../../App";
 
 export default function Leaders() {
+  const companyInfo = useContext(DataContext);
+  console.log(companyInfo);
   return (
     <div className="leaders-container">
       <div className="leader">
@@ -19,7 +18,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          {/* <div className="leader-name">{companyData[0].coo}</div> */}
+          <div className="leader-name">{companyInfo.coo}</div>
           <div className="leader-position">Coo</div>
         </div>
       </div>
@@ -32,7 +31,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          {/* <div className="leader-name">{companyData[0].ceo}</div> */}
+          <div className="leader-name">{companyInfo.ceo}</div>
           <div className="leader-position">Ceo&amp;Cto</div>
         </div>
       </div>
@@ -45,7 +44,7 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          {/* <div className="leader-name">{companyData[0].cto_propulsion}</div> */}
+          <div className="leader-name">{companyInfo.cto_propulsion}</div>
           <div className="leader-position">Cto propulsion</div>
         </div>
       </div>
