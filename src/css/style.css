@@ -655,15 +655,39 @@ footer ul li {
           transform: scale(1.05) translateY(-15px);
 }
 
-.logo-container {
+.company-stats-container {
+  height: 100vh;
+}
+
+.company-stats-container .company-stats-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.company-stats-container .company-stats-title .logo-container {
   width: 240px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   cursor: pointer;
 }
 
-.logo-container a {
+.company-stats-container .company-stats-title .logo-container a {
   width: 100%;
+}
+
+.company-stats-container .company-stats {
+  font-size: 2rem;
+}
+
+.company-stats-container .social-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
 }
 
 *,

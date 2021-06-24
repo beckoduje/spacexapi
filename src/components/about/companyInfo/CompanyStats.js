@@ -23,6 +23,23 @@ export default function CompanyStats() {
         <div>Headquarters:</div>
         <div></div>
       </div>
+      <div className="social-icons-container">
+        <div className="social-icon">
+          <i className="fab fa-twitter"></i>
+        </div>
+        <div className="social-icon">
+          <i className="fab fa-youtube"></i>
+        </div>
+        <div className="social-icon">
+          <i className="fab fa-instagram"></i>
+        </div>
+        <div className="social-icon">
+          <i className="fab fa-flickr"></i>
+        </div>
+        <div className="social-icon">
+          <i className="fab fa-linkedin-in"></i>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,26 @@
-.logo-container {
-  width: 240px;
-  transform: translateY(-5px);
-  cursor: pointer;
+.company-stats-container {
+  height: 100vh;
+  .company-stats-title {
+    display: flex;
+    justify-content: center;
 
-  a {
-    width: 100%;
+    .logo-container {
+      width: 240px;
+      transform: translateY(-5px);
+      cursor: pointer;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+
+  .company-stats {
+    font-size: 2rem;
+  }
+
+  .social-icons-container {
+    display: flex;
+    font-size: 2rem;
   }
 }
