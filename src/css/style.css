@@ -655,11 +655,27 @@ footer ul li {
           transform: scale(1.05) translateY(-15px);
 }
 
-.company-stats-container {
-  height: 100vh;
+.section.company-info .section-shader {
+  padding-bottom: 0;
 }
 
-.company-stats-container .company-stats-title {
+.section.company-info .section-shader .company-stats-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.section.company-info .section-shader .company-stats-container .company-stats-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,26 +684,40 @@ footer ul li {
           justify-content: center;
 }
 
-.company-stats-container .company-stats-title .logo-container {
-  width: 240px;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  cursor: pointer;
+.section.company-info .section-shader .company-stats-container .company-stats-title .logo-container {
+  width: 300px;
 }
 
-.company-stats-container .company-stats-title .logo-container a {
+.section.company-info .section-shader .company-stats-container .company-stats-title .logo-container a {
+  cursor: default;
+  pointer-events: none;
+}
+
+.section.company-info .section-shader .company-stats-container .company-stats-title .logo-container a {
   width: 100%;
 }
 
-.company-stats-container .company-stats {
-  font-size: 2rem;
-}
-
-.company-stats-container .social-icons-container {
+.section.company-info .section-shader .company-stats-container .company-stats {
+  font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+}
+
+.section.company-info .section-shader .company-stats-container .company-stats .stats-label {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.section.company-info .section-shader .company-stats-container .social-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+}
+
+.section.company-info .section-shader .company-stats-container .social-icons-container .social-icon {
+  margin-right: 7rem;
 }
 
 *,

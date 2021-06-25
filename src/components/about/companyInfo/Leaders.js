@@ -3,20 +3,20 @@ import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
 import muskProfileImg from "../../../images/elon-musk.jpg";
 import mullerProfileImg from "../../../images/tom-muller.jpg";
 // import { DataContext } from "../../../App";
-import { getData } from "../../../API.js";
+import { getCompanyInfoData } from "../../../API.js";
 
 export default function Leaders() {
   // const companyInfo = useContext(DataContext);
-  const [datas, getDatas] = useState();
+  const [companyInfo, setCompanyInfo] = useState();
 
   useEffect(() => {
-    getData().then(function (value) {
+    getCompanyInfoData().then(function (value) {
       console.log(value);
-      getDatas(value);
+      setCompanyInfo(value);
     });
   }, []);
 
-  console.log(datas);
+  console.log(companyInfo);
 
   return (
     <div className="leaders-container">
@@ -29,7 +29,9 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{datas ? datas.coo : ""}</div>
+          <div className="leader-name">
+            {companyInfo ? companyInfo.coo : ""}
+          </div>
           <div className="leader-position">Coo</div>
         </div>
       </div>
@@ -42,7 +44,9 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{datas ? datas.ceo : ""}</div>
+          <div className="leader-name">
+            {companyInfo ? companyInfo.ceo : ""}
+          </div>
           <div className="leader-position">Ceo&amp;Cto</div>
         </div>
       </div>
@@ -55,7 +59,9 @@ export default function Leaders() {
           />
         </figure>
         <div className="leader-info-container">
-          <div className="leader-name">{datas ? datas.cto_propulsion : ""}</div>
+          <div className="leader-name">
+            {companyInfo ? companyInfo.cto_propulsion : ""}
+          </div>
           <div className="leader-position">Cto propulsion</div>
         </div>
       </div>
