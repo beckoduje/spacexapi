@@ -5,3 +5,9 @@ export const getCompanyInfoData = async () => {
   const data = await res.json();
   return await data;
 };
+
+export const getRocketData = async () => {
+  const res = await fetch(`${api}/rockets`);
+  const data = await res.json();
+  return await data;
+};

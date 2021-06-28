@@ -720,6 +720,25 @@ footer ul li {
   margin-right: 7rem;
 }
 
+.section.falcon-nine-header {
+  background-image: url("https://farm4.staticflickr.com/3955/32915197674_eee74d81bb_b.jpg");
+  background-size: cover;
+}
+
+.section.falcon-nine-header .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section.falcon-nine-header .section-shader h1 {
+  font-size: 4rem;
+}
+
+.section.falcon-nine-header .section-shader h2 {
+  font-size: 2rem;
+}
+
 *,
 *::before,
 *::after {

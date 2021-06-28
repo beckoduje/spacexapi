@@ -1,0 +1,16 @@
+.section.falcon-nine-header {
+  background-image: url("https://farm4.staticflickr.com/3955/32915197674_eee74d81bb_b.jpg");
+  background-size: cover;
+
+  .section-shader {
+    align-items: center;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

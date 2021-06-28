@@ -2,11 +2,9 @@ import React, { useState, useEffect, useContext } from "react";
 import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
 import muskProfileImg from "../../../images/elon-musk.jpg";
 import mullerProfileImg from "../../../images/tom-muller.jpg";
-// import { DataContext } from "../../../App";
 import { getCompanyInfoData } from "../../../API.js";
 
 export default function Leaders() {
-  // const companyInfo = useContext(DataContext);
   const [companyInfo, setCompanyInfo] = useState();
 
   useEffect(() => {

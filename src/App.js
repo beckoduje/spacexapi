@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/style.css";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import Rockets from "./components/rockets/Rockets";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -11,6 +12,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/rockets">
+          <Rockets />
+        </Route>
         <Route path="/about">
           <About />
         </Route>

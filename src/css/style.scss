@@ -1,26 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
-@import "./variables";
-@import "./missionSection";
-@import "./nav";
-@import "./logo";
-@import "./mission";
-@import "./falconNineSection";
-@import "./falconHeavy";
-@import "./starship";
-@import "./dragon";
-@import "recentLaunch";
-@import "crewMembers";
-@import "moleculesGrid";
-@import "subscription";
-@import "footer";
-@import "about";
-@import "aboutHeader";
-@import "aboutMessageOne";
-@import "aboutMessageTwo";
-@import "companyInfo";
-@import "leaders";
-@import "companyStats";
+@import "variables";
+@import "./home/missionSection";
+@import "./nav/nav";
+@import "./nav/logo";
+@import "./home/mission";
+@import "./home/falconNineSection";
+@import "./home/falconHeavy";
+@import "./home/starship";
+@import "./home/dragon";
+@import "./home/recentLaunch";
+@import "./home/crewMembers";
+@import "./home/moleculesGrid";
+@import "./home/subscription";
+@import "./home/footer";
+@import "./about/about";
+@import "./about/aboutHeader";
+@import "./about/aboutMessageOne";
+@import "./about/aboutMessageTwo";
+@import "./about/companyInfo";
+@import "./about/leaders";
+@import "./about/companyStats";
+@import "./rockets/falconNineHeader";
 
 *,
 *::before,
