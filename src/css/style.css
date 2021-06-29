@@ -739,6 +739,59 @@ footer ul li {
   font-size: 2rem;
 }
 
+.section.falcon-nine-stats {
+  background-image: url("https://farm1.staticflickr.com/623/23660653516_5b6cb301d1_b.jpg");
+  background-size: cover;
+}
+
+.section.falcon-nine-stats .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section.falcon-nine-stats .section-shader h2 {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  font-size: 2.5rem;
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn.left {
+  left: 6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn.right {
+  right: 6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 *,
 *::before,
 *::after {
