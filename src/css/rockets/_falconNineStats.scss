@@ -15,6 +15,7 @@
       flex-basis: 80%;
       width: 100%;
       position: relative;
+      overflow: hidden;
 
       .slider {
         position: absolute;
@@ -22,12 +23,63 @@
         left: 0;
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.slider-one {
+          // background: black;
+        }
+        &.slider-two {
+          background: orange;
+          transform: translateX(100%);
+        }
+        &.slider-three {
+          background: red;
+          transform: translateX(200%);
+        }
+        &.slider-four {
+          background: greenyellow;
+          transform: translateX(300%);
+        }
+
+        .slider-stats-container {
+          width: 70%;
+          padding: 4rem;
+          background: rgba(255, 255, 255, 0.74);
+          border-radius: 12px;
+
+          h3 {
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            color: rgba(15, 15, 15, 0.78);
+          }
+
+          .stat-cont {
+            display: flex;
+            font-size: 1.8rem;
+            color: rgba(15, 15, 15, 0.78);
+
+            div:first-child {
+              flex-basis: 50%;
+            }
+
+            div:last-child {
+              flex-basis: 30%;
+              text-align: end;
+            }
+          }
+        }
       }
 
       .slide-btn {
         position: absolute;
         top: 50%;
         z-index: 10;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 5rem;
 
         &.left {
           left: 6%;
