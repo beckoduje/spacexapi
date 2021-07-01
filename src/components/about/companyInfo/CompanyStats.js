@@ -7,12 +7,9 @@ export default function CompanyStats() {
 
   useEffect(() => {
     getCompanyInfoData().then(function (value) {
-      console.log(value);
       setCompanyInfo(value);
     });
   }, []);
-
-  console.log(companyInfo);
 
   return (
     <div className="company-stats-container">

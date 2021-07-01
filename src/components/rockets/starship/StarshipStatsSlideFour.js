@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function FalconNineStatsSlideFour() {
+export default function StarshipStatsSlideFour() {
   return (
-    <div className="slider slider-nine slider-four">
+    <div className="slider slider-starship slider-four">
       <div className="slider-stats-container">
         <h3>Interstage</h3>
         <p>

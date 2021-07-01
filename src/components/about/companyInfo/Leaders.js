@@ -9,12 +9,9 @@ export default function Leaders() {
 
   useEffect(() => {
     getCompanyInfoData().then(function (value) {
-      console.log(value);
       setCompanyInfo(value);
     });
   }, []);
-
-  console.log(companyInfo);
 
   return (
     <div className="leaders-container">

@@ -782,22 +782,23 @@ footer ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slider.slider-two {
-  background: orange;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slider.slider-three {
-  background: red;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slider.slider-four {
-  background: greenyellow;
   -webkit-transform: translateX(300%);
           transform: translateX(300%);
 }
@@ -812,6 +813,11 @@ footer ul li {
 .section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container h3 {
   font-size: 2.3rem;
   text-transform: uppercase;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container p {
+  font-size: 1.8rem;
   color: rgba(15, 15, 15, 0.78);
 }
 
@@ -844,13 +850,13 @@ footer ul li {
   font-size: 5rem;
 }
 
-.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn.left {
+.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn--left {
   left: 6%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn.right {
+.section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn--right {
   right: 6%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);

@@ -26,20 +26,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform 1s;
 
         &.slider-one {
           // background: black;
         }
         &.slider-two {
-          background: orange;
           transform: translateX(100%);
         }
         &.slider-three {
-          background: red;
           transform: translateX(200%);
         }
         &.slider-four {
-          background: greenyellow;
           transform: translateX(300%);
         }
 
@@ -52,6 +50,11 @@
           h3 {
             font-size: 2.3rem;
             text-transform: uppercase;
+            color: rgba(15, 15, 15, 0.78);
+          }
+
+          p {
+            font-size: 1.8rem;
             color: rgba(15, 15, 15, 0.78);
           }
 
@@ -81,12 +84,12 @@
         background: none;
         font-size: 5rem;
 
-        &.left {
+        &--left {
           left: 6%;
           transform: translate(-50%, -50%);
         }
 
-        &.right {
+        &--right {
           right: 6%;
           transform: translate(-50%, -50%);
         }
