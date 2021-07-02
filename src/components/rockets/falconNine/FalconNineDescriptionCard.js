@@ -11,12 +11,11 @@ export default function FalconNineDescriptionCard() {
   }, []);
 
   return (
-    <div className="about-message one">
-      <div className="about-message-text-container">
-        <p className="about-message-text">
+    <div className="rocket-description-container">
+      <div className="rocket-description-text-container">
+        <p className="rocket-description-text">
           {rocketInfo ? rocketInfo[1].description : ""}
         </p>
-        <p className="about-message-name">Elon Musk</p>
       </div>
       <div className="white-box"></div>
     </div>

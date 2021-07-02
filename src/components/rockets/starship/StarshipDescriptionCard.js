@@ -11,9 +11,9 @@ export default function StarshipDescriptionCard() {
   }, []);
 
   return (
-    <div className="about-message one">
-      <div className="about-message-text-container">
-        <p className="about-message-text">
+    <div className="rocket-description-container">
+      <div className="rocket-description-text-container">
+        <p className="rocket-description-text">
           {rocketInfo ? rocketInfo[3].description : ""}
         </p>
       </div>

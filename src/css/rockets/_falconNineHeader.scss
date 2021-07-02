@@ -5,12 +5,17 @@
   .section-shader {
     align-items: center;
 
+    .nav {
+      margin-bottom: auto;
+    }
+
     h1 {
-      font-size: 4rem;
+      font-size: 6.5rem;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.75rem;
+      // transform: translateY(-20px);
     }
   }
 }
