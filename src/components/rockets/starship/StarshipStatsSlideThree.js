@@ -16,7 +16,9 @@ export default function StarshipStatsSlideThree() {
         <h3>Second Stage</h3>
         <div className="stat-cont">
           <div>Engines Type:</div>
-          <div>{rocketInfo ? rocketInfo[3].engines.type : ""}</div>
+          <div className="engine-name">
+            {rocketInfo ? rocketInfo[3].engines.type : ""}
+          </div>
         </div>
         <div className="stat-cont">
           <div>Number of Engines:</div>
@@ -25,18 +27,15 @@ export default function StarshipStatsSlideThree() {
         <div className="stat-cont">
           <div>Fuel Amount:</div>
           <div>
-            {rocketInfo ? rocketInfo[3].second_stage.fuel_amount_tons : ""}
-          </div>
-        </div>
-        <div className="stat-cont">
-          <div>Burn Time:</div>
-          <div>
-            {rocketInfo ? rocketInfo[3].second_stage.burn_time_sec : ""}
+            {rocketInfo ? rocketInfo[3].second_stage.fuel_amount_tons : ""}t
           </div>
         </div>
         <div className="stat-cont">
           <div>Thrust at Sea Level:</div>
-          <div>{rocketInfo ? rocketInfo[3].second_stage.thrust.kN : ""}</div>
+          <div>
+            {rocketInfo ? rocketInfo[3].second_stage.thrust.kN : ""}kN /{" "}
+            {rocketInfo ? rocketInfo[3].second_stage.thrust.lbf : ""}lbf
+          </div>
         </div>
       </div>
     </div>

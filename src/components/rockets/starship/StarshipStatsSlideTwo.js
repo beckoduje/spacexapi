@@ -16,7 +16,9 @@ export default function StarshipStatsSlideTwo() {
         <h3>First Stage</h3>
         <div className="stat-cont">
           <div>Engines Type:</div>
-          <div>{rocketInfo ? rocketInfo[3].engines.type : ""}</div>
+          <div className="engine-name">
+            {rocketInfo ? rocketInfo[3].engines.type : ""}
+          </div>
         </div>
         <div className="stat-cont">
           <div>Number of Engines:</div>
@@ -25,23 +27,22 @@ export default function StarshipStatsSlideTwo() {
         <div className="stat-cont">
           <div>Fuel Amount:</div>
           <div>
-            {rocketInfo ? rocketInfo[3].first_stage.fuel_amount_tons : ""}
+            {rocketInfo ? rocketInfo[3].first_stage.fuel_amount_tons : ""}t
           </div>
-        </div>
-        <div className="stat-cont">
-          <div>Burn Time:</div>
-          <div>{rocketInfo ? rocketInfo[3].first_stage.burn_time_sec : ""}</div>
         </div>
         <div className="stat-cont">
           <div>Thrust at Sea Level:</div>
           <div>
-            {rocketInfo ? rocketInfo[3].first_stage.thrust_sea_level.kN : ""}
+            {rocketInfo ? rocketInfo[3].first_stage.thrust_sea_level.kN : ""}kN
+            / {rocketInfo ? rocketInfo[3].first_stage.thrust_sea_level.lbf : ""}
+            lbf
           </div>
         </div>
         <div className="stat-cont">
           <div>Thrust in Vacuum:</div>
           <div>
-            {rocketInfo ? rocketInfo[3].first_stage.thrust_vacuum.kN : ""}
+            {rocketInfo ? rocketInfo[3].first_stage.thrust_vacuum.kN : ""}kn /{" "}
+            {rocketInfo ? rocketInfo[3].first_stage.thrust_vacuum.lbf : ""}lbf
           </div>
         </div>
       </div>

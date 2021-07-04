@@ -16,7 +16,9 @@ export default function FalconHeavyStatsSlideThree() {
         <h3>Second Stage</h3>
         <div className="stat-cont">
           <div>Engines Type:</div>
-          <div>{rocketInfo ? rocketInfo[2].engines.type : ""}</div>
+          <div className="engine-name">
+            {rocketInfo ? rocketInfo[2].engines.type : ""}
+          </div>
         </div>
         <div className="stat-cont">
           <div>Number of Engines:</div>
@@ -25,18 +27,21 @@ export default function FalconHeavyStatsSlideThree() {
         <div className="stat-cont">
           <div>Fuel Amount:</div>
           <div>
-            {rocketInfo ? rocketInfo[2].second_stage.fuel_amount_tons : ""}
+            {rocketInfo ? rocketInfo[2].second_stage.fuel_amount_tons : ""}t
           </div>
         </div>
         <div className="stat-cont">
           <div>Burn Time:</div>
           <div>
-            {rocketInfo ? rocketInfo[2].second_stage.burn_time_sec : ""}
+            {rocketInfo ? rocketInfo[2].second_stage.burn_time_sec : ""}sec
           </div>
         </div>
         <div className="stat-cont">
           <div>Thrust at Sea Level:</div>
-          <div>{rocketInfo ? rocketInfo[2].second_stage.thrust.kN : ""}</div>
+          <div>
+            {rocketInfo ? rocketInfo[2].second_stage.thrust.kN : ""}kN /{" "}
+            {rocketInfo ? rocketInfo[2].second_stage.thrust.lbf : ""}lbf
+          </div>
         </div>
       </div>
     </div>

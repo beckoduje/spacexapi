@@ -1,0 +1,22 @@
+.section.falcon-heavy-header {
+  background-image: url("https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg");
+  background-size: cover;
+
+  .section-shader {
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav {
+      margin-bottom: auto;
+    }
+
+    h1 {
+      font-size: 6.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      // transform: translateY(-20px);
+    }
+  }
+}

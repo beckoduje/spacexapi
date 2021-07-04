@@ -755,15 +755,15 @@ footer ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section.falcon-nine-stats .section-shader h2 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
   font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper {
@@ -812,6 +812,7 @@ footer ul li {
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container {
   width: 70%;
+  min-height: 80%;
   padding: 4rem;
   background: rgba(255, 255, 255, 0.74);
   border-radius: 12px;
@@ -832,19 +833,15 @@ footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.8rem;
   color: rgba(15, 15, 15, 0.78);
 }
 
-.section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont div:first-child {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont div:last-child {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  text-align: end;
+.section.falcon-nine-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont .engine-name:first-letter {
+  text-transform: capitalize;
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn {
@@ -859,14 +856,14 @@ footer ul li {
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn--left {
   left: 6%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn--right {
   right: 6%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .rocket-description-container {
@@ -916,6 +913,298 @@ footer ul li {
   height: 115%;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 12px;
+}
+
+.section.falcon-heavy-header {
+  background-image: url("https://farm5.staticflickr.com/4645/38583830575_3f0f7215e6_b.jpg");
+  background-size: cover;
+}
+
+.section.falcon-heavy-header .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section.falcon-heavy-header .section-shader .nav {
+  margin-bottom: auto;
+}
+
+.section.falcon-heavy-header .section-shader h1 {
+  font-size: 6.5rem;
+}
+
+.section.falcon-heavy-header .section-shader h2 {
+  font-size: 1.75rem;
+}
+
+.section.falcon-heavy-stats {
+  background-image: url("https://farm5.staticflickr.com/4696/40126460511_b15bf84c85_b.jpg");
+  background-size: cover;
+}
+
+.section.falcon-heavy-stats .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section.falcon-heavy-stats .section-shader h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider.slider-two {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider.slider-three {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider.slider-four {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider .slider-stats-container {
+  width: 70%;
+  min-height: 80%;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 12px;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider .slider-stats-container h3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider .slider-stats-container p {
+  font-size: 1.8rem;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.8rem;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont .engine-name:first-letter {
+  text-transform: capitalize;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slide-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slide-btn--left {
+  left: 6%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.section.falcon-heavy-stats .section-shader .slides-wrapper .slide-btn--right {
+  right: 6%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.section.starship-header {
+  background-image: url("https://live.staticflickr.com/65535/48953947006_313f01ec93_b.jpg");
+  background-size: cover;
+}
+
+.section.starship-header .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section.starship-header .section-shader .nav {
+  margin-bottom: auto;
+}
+
+.section.starship-header .section-shader h1 {
+  font-size: 6.5rem;
+}
+
+.section.starship-header .section-shader h2 {
+  font-size: 1.75rem;
+}
+
+.section.starship-stats {
+  background-image: url("https://live.staticflickr.com/65535/48954138962_ee541e6755_b.jpg");
+  background-size: cover;
+}
+
+.section.starship-stats .section-shader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section.starship-stats .section-shader h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section.starship-stats .section-shader .slides-wrapper {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider.slider-two {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider.slider-three {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider.slider-four {
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider .slider-stats-container {
+  width: 70%;
+  min-height: 80%;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 12px;
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider .slider-stats-container h3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider .slider-stats-container p {
+  font-size: 1.8rem;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.8rem;
+  color: rgba(15, 15, 15, 0.78);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slider .slider-stats-container .stat-cont .engine-name:first-letter {
+  text-transform: capitalize;
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slide-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slide-btn--left {
+  left: 6%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.section.starship-stats .section-shader .slides-wrapper .slide-btn--right {
+  right: 6%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 *,

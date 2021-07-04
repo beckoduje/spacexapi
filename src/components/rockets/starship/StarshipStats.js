@@ -46,7 +46,7 @@ export default function StarshipStats() {
   };
 
   return (
-    <section className="section falcon-nine-stats">
+    <section className="section starship-stats">
       <div className="section-shader">
         <h2>Starship - stats</h2>
         <div className="slides-wrapper">

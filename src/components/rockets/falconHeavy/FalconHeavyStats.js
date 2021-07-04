@@ -46,7 +46,7 @@ export default function FalconHeavyStats() {
   };
 
   return (
-    <section className="section falcon-nine-stats">
+    <section className="section falcon-heavy-stats">
       <div className="section-shader">
         <h2>Falcon Heavy - stats</h2>
         <div className="slides-wrapper">

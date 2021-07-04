@@ -1,0 +1,22 @@
+.section.starship-header {
+  background-image: url("https://live.staticflickr.com/65535/48953947006_313f01ec93_b.jpg");
+  background-size: cover;
+
+  .section-shader {
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav {
+      margin-bottom: auto;
+    }
+
+    h1 {
+      font-size: 6.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      // transform: translateY(-20px);
+    }
+  }
+}
