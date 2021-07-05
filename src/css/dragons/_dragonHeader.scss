@@ -1,0 +1,21 @@
+.section.dragon-header {
+  background-image: url("https://farm1.staticflickr.com/780/21119686299_c88f63e350_b.jpg");
+  background-size: cover;
+
+  .section-shader {
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav {
+      margin-bottom: auto;
+    }
+
+    h1 {
+      font-size: 6.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+}

@@ -1,12 +1,10 @@
 import React from "react";
-import DragonOne from "./dragonOne/DragonOne";
-import DragonTwo from "./dragonTwo/DragonTwo";
+import Dragon from "./Dragon";
 
 export default function Dragons() {
   return (
-    <div className="dragons-wrapper">
-      <DragonOne />
-      <DragonTwo />
+    <div className="dragon-wrapper">
+      <Dragon />
     </div>
   );
 }

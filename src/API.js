@@ -11,3 +11,9 @@ export const getRocketData = async () => {
   const data = await res.json();
   return await data;
 };
+
+export const getDragonsData = async () => {
+  const res = await fetch(`${api}/dragons`);
+  const data = await res.json();
+  return await data;
+};

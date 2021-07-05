@@ -1,0 +1,101 @@
+.section.dragon-stats {
+  background-image: url("https://live.staticflickr.com/8578/16655995541_7817565ea9_k.jpg");
+  background-size: cover;
+
+  .section-shader {
+    align-items: center;
+    justify-content: flex-end;
+
+    h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .slides-wrapper {
+      flex-basis: 80%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 1s;
+
+        &.slider-one {
+          // background: black;
+        }
+        &.slider-two {
+          transform: translateX(100%);
+        }
+        &.slider-three {
+          transform: translateX(200%);
+        }
+        &.slider-four {
+          transform: translateX(300%);
+        }
+
+        .slider-stats-container {
+          width: 70%;
+          min-height: 80%;
+          padding: 4rem;
+          background: rgba(255, 255, 255, 0.74);
+          border-radius: 12px;
+
+          h3 {
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            color: rgba(15, 15, 15, 0.78);
+          }
+
+          p {
+            font-size: 1.8rem;
+            color: rgba(15, 15, 15, 0.78);
+          }
+
+          .stat-cont {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.8rem;
+            color: rgba(15, 15, 15, 0.78);
+
+            .engine-name:first-letter {
+              text-transform: capitalize;
+            }
+
+            // div:last-child {
+            //   text-align: end;
+            // }
+          }
+        }
+      }
+
+      .slide-btn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 5rem;
+
+        &--left {
+          left: 6%;
+          transform: translate(0, -50%);
+        }
+
+        &--right {
+          right: 6%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+}

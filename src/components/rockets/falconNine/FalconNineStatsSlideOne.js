@@ -33,7 +33,7 @@ export default function FalconNineStatsSlideOne() {
           <div>Diameter:</div>
           <div>
             {rocketInfo ? rocketInfo[1].diameter.meters : ""}m /{" "}
-            {rocketInfo ? rocketInfo[1].diameter.meters : ""}ft
+            {rocketInfo ? rocketInfo[1].diameter.feet : ""}ft
           </div>
         </div>
         <div className="stat-cont">
