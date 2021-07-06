@@ -5,7 +5,7 @@ import FalconNineSection from "./FalconNineSection";
 import FalconHeavy from "./FalconHeavy";
 import Startship from "./Startship";
 import Dragon from "./Dragon";
-import RecentLaunch from "./RecentLaunch";
+import Launches from "./Launches";
 import CrewMembers from "./crewSection/CrewMembers";
 import Subscription from "./Subscription";
 import Footer from "./Footer";
@@ -20,7 +20,7 @@ export default function Home(props) {
       <FalconHeavy />
       <Startship />
       <Dragon />
-      <RecentLaunch />
+      <Launches />
       <CrewMembers />
       <Subscription />
       <Footer />
