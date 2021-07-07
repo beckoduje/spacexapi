@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Rockets from "./components/rockets/Rockets";
 import Dragons from "./components/dragons/Dragons";
+import Launches from "./components/launches/Launches";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -13,6 +14,9 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/launches">
+          <Launches />
+        </Route>
         <Route path="/dragons">
           <Dragons />
         </Route>
