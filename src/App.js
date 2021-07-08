@@ -5,6 +5,10 @@ import About from "./components/about/About";
 import Rockets from "./components/rockets/Rockets";
 import Dragons from "./components/dragons/Dragons";
 import Launches from "./components/launches/Launches";
+import Crew from "./components/crew/Crew";
+import Roadster from "./components/roadster/Roadster";
+import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,6 +18,15 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/roadster">
+          <Roadster />
+        </Route>
+        <Route path="/crew">
+          <Crew />
+        </Route>
         <Route path="/launches">
           <Launches />
         </Route>

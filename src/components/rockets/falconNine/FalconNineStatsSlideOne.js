@@ -11,7 +11,7 @@ export default function FalconNineStatsSlideOne() {
   }, []);
 
   return (
-    <div className="slider slider-nine  slider-one">
+    <div className="slider slider-nine slider-one">
       <div className="slider-stats-container">
         <h3>Overview</h3>
         <div className="stat-cont">

@@ -91,6 +91,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 1.6rem;
+  cursor: pointer;
 }
 
 .nav .nav-links-container .hambi-links .hambi-cont {
@@ -1543,6 +1544,46 @@ footer ul li {
   height: 134%;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 12px;
+}
+
+.crew-wrapper nav {
+  padding: 10rem;
+  padding-top: 3rem;
+}
+
+.section.menu {
+  height: 100vh;
+  /* The image used */
+  background-image: url("../images/earthAndSun.png");
+  /* Full height */
+  /* Create the parallax scrolling effect */
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+}
+
+.section.menu .section-shader {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.96);
+  padding: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section.menu .section-shader .menu-links-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 *,

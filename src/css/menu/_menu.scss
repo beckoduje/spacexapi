@@ -1,0 +1,30 @@
+.section.menu {
+  height: 100vh;
+
+  /* The image used */
+  background-image: url("../images/earthAndSun.png");
+
+  /* Full height */
+  // height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  //   background-size: 112%;
+
+  .section-shader {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.96);
+    padding: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .menu-links-container {
+      align-self: center;
+    }
+  }
+}
