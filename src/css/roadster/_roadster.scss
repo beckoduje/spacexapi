@@ -1,0 +1,20 @@
+.section.roadster {
+  height: unset;
+  background-attachment: fixed;
+  background-image: url("../images/roadsterBackgroundImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .section-shader {
+    justify-content: flex-start;
+    height: unset;
+
+    h1 {
+      font-size: 6.5rem;
+      text-align: center;
+      margin-top: 10rem;
+      margin-bottom: 8rem;
+      font-weight: 900;
+    }
+  }
+}

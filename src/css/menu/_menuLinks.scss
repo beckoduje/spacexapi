@@ -1,0 +1,24 @@
+.menu-links-container {
+  align-self: center;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-basis: 90%;
+  justify-content: center;
+  margin-top: 7rem;
+
+  li {
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

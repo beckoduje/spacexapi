@@ -1,16 +1,15 @@
 .section.menu {
   height: 100vh;
-
-  /* The image used */
   background-image: url("../images/earthAndSun.png");
-
-  /* Full height */
-  // height: 100%;
-
-  /* Create the parallax scrolling effect */
   background-position: 0 30%;
   background-repeat: no-repeat;
-  //   background-size: 112%;
+  // za sad ovo doli iskomentirano da mogu lakše raditi
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 999;
+  // pointer-events: none;
 
   .section-shader {
     height: 100%;
@@ -23,8 +22,9 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    .menu-links-container {
-      align-self: center;
+    nav {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid white;
     }
   }
 }

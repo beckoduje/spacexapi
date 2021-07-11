@@ -9,7 +9,8 @@ export default function Menu(props) {
       className="section menu"
     >
       <div className="section-shader">
-        <Nav />
+        {/* ovo doli nisam nigdi napisa, DUMMY */}
+        <Nav className="opened-menu" openedMenu={props.openedMenu} />
         <MenuLinks />
       </div>
     </section>

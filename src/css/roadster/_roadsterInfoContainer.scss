@@ -1,0 +1,34 @@
+.roadster-info-container {
+  position: relative;
+  border-radius: 12px;
+
+  &::before {
+    background-image: url("../images/roadster1.jpg");
+    background-size: cover;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    border-radius: 12px;
+  }
+
+  .roadster-info-container-shader {
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.78);
+    padding: 8%;
+    border-radius: 12px;
+    // ovo je da mi before bude ispod svega ostaloga
+    z-index: 10;
+    position: relative;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}

@@ -23,7 +23,7 @@ export default function MenuLinks() {
         <Link to="/roadster">Roadster</Link>
       </li>
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">Contact Us</Link>
       </li>
     </ul>
   );
