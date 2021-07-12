@@ -184,6 +184,11 @@
   color: #de572c;
 }
 
+.section-info-container .section-info button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section-info-container .white-box {
   position: absolute;
   top: -2rem;
@@ -1730,9 +1735,103 @@ footer ul li {
   color: rgba(15, 15, 15, 0.92);
 }
 
+.roadster-info-cards-container .roadster-info-card-wrapper .roadster-single-stat-cont .orbit-type {
+  text-transform: capitalize;
+}
+
 .roadster-info-cards-container:hover .roadster-info-card-wrapper:not(:hover) {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.section.contact {
+  height: 100vh;
+  background-image: url("../images/earthAndSun.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section.contact .section-shader {
+  background: rgba(0, 0, 0, 0.96);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content 1fr;
+      grid-template-rows: -webkit-max-content -webkit-max-content 1fr;
+      grid-template-rows: max-content max-content 1fr;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.section.contact .section-shader h1 {
+  text-transform: uppercase;
+  font-size: 2.65rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (max-content)[2] 1fr max-content;
+      grid-template-rows: repeat(2, -webkit-max-content) 1fr -webkit-max-content;
+      grid-template-rows: repeat(2, max-content) 1fr max-content;
+  grid-row-gap: 2rem;
+  width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.form-container .form-group label {
+  position: absolute;
+}
+
+.form-container .form-group input {
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.24);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.form-container .form-group.textarea textarea {
+  height: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.form-container .submit-btn {
+  padding: 1.5rem;
+  background: black;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border-radius: 12px;
+  border: 1px solid white;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 *,

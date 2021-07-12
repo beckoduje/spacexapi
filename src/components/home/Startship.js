@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Startship() {
   return (
@@ -14,7 +15,9 @@ export default function Startship() {
               Moon, Mars and beyond. Starship will be the world’s most powerful
               launch vehicle ever developed.
             </p>
-            <button type="text">READ MORE</button>
+            <button type="text">
+              <Link to="/rockets">READ MORE</Link>
+            </button>
           </div>
           <div className="white-box starship"></div>
         </div>

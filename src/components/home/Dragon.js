@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Dragon() {
   return (
@@ -14,7 +15,9 @@ export default function Dragon() {
               of cargo to Earth, and is the first private spacecraft to take
               humans to the sp...
             </p>
-            <button type="text">READ MORE</button>
+            <button type="text">
+              <Link to="/dragons">READ MORE</Link>
+            </button>
           </div>
           <div className="white-box dragon"></div>
         </div>

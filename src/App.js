@@ -8,7 +8,6 @@ import Launches from "./components/launches/Launches";
 import Crew from "./components/crew/Crew";
 import Roadster from "./components/roadster/Roadster";
 import Contact from "./components/contact/Contact";
-import Menu from "./components/menu/Menu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

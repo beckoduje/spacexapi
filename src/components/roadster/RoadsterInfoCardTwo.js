@@ -1,27 +1,29 @@
 import React from "react";
 
-export default function RoadsterInfoCardTwo() {
+export default function RoadsterInfoCardTwo({ roadsterInfo }) {
   return (
     <div className="roadster-info-card-wrapper roadster-card-two">
       <div className="roadster-single-stat-cont">
         <div>Orbit type:</div>
-        <div>Heliocentric</div>
+        <div className="orbit-type">
+          {roadsterInfo ? roadsterInfo.orbit_type : ""}
+        </div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Earth distance in km:</div>
-        <div>119646462.29119228</div>
+        <div>{roadsterInfo ? roadsterInfo.earth_distance_km : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Earth distance in mi:</div>
-        <div>74344841.92034043</div>
+        <div>{roadsterInfo ? roadsterInfo.earth_distance_mi : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Mars distance in km:</div>
-        <div>343120180.33188194</div>
+        <div>{roadsterInfo ? roadsterInfo.mars_distance_km : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Mars distance in mi:</div>
-        <div>213204929.5730018</div>
+        <div>{roadsterInfo ? roadsterInfo.mars_distance_mi : ""}</div>
       </div>
     </div>
   );

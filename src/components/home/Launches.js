@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Launches() {
   return (
@@ -13,7 +14,9 @@ export default function Launches() {
               massa nisi, venenatis et viverra lacinia, condimentum nec diam.
               Praesent vel lacus at augue lobortis mattis.
             </p>
-            <button type="text">READ MORE</button>
+            <button type="text">
+              <Link to="/launches">READ MORE</Link>
+            </button>
           </div>
           <div className="white-box recent-launch"></div>
         </div>

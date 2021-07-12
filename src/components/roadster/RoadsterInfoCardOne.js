@@ -1,35 +1,38 @@
 import React from "react";
 
-export default function RoadsterInfoCardOne() {
+export default function RoadsterInfoCardOne({ roadsterInfo }) {
   return (
     <div className="roadster-info-card-wrapper roadster-card-one">
       <div className="roadster-single-stat-cont">
         <div>Launch date:</div>
-        <div>2018/02/06</div>
+        <div>{roadsterInfo ? roadsterInfo.launch_date_utc : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Launch mass:</div>
-        <div>1350kg/2976lbs</div>
+        <div>
+          {roadsterInfo ? roadsterInfo.launch_mass_kg : ""}kg/
+          {roadsterInfo ? roadsterInfo.launch_mass_lbs : ""}lbs
+        </div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Eccentricity:</div>
-        <div>0.2560714190055163</div>
+        <div>{roadsterInfo ? roadsterInfo.eccentricity : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Inclination:</div>
-        <div>1.075783527301884</div>
+        <div>{roadsterInfo ? roadsterInfo.inclination : ""}4</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Longitude:</div>
-        <div>316.9254983338944</div>
+        <div>{roadsterInfo ? roadsterInfo.longitude : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Speed in km/h:</div>
-        <div>8257.009093925795</div>
+        <div>{roadsterInfo ? roadsterInfo.speed_kph : ""}</div>
       </div>
       <div className="roadster-single-stat-cont">
         <div>Speed in mp/h:</div>
-        <div>5130.665997701765</div>
+        <div>{roadsterInfo ? roadsterInfo.speed_mph : ""}</div>
       </div>
     </div>
   );

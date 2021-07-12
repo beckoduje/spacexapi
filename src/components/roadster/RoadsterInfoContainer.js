@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RoadsterInfoCardOne from "./RoadsterInfoCardOne";
 import RoadsterInfoCardTwo from "./RoadsterInfoCardTwo";
+import { getRoadsterData } from "../../API";
 
 export default function RoadsterInfoContainer() {
+  const [roadsterInfo, setRoadsterInfo] = useState();
+
+  useEffect(() => {
+    getRoadsterData("").then(function (value) {
+      setRoadsterInfo(value);
+    });
+  }, []);
+
   return (
     <div className="roadster-info-container">
       <div className="roadster-info-container-shader">
@@ -16,8 +25,8 @@ export default function RoadsterInfoContainer() {
           sent into space.
         </p>
         <div className="roadster-info-cards-container">
-          <RoadsterInfoCardOne />
-          <RoadsterInfoCardTwo />
+          <RoadsterInfoCardOne roadsterInfo={roadsterInfo} />
+          <RoadsterInfoCardTwo roadsterInfo={roadsterInfo} />
         </div>
       </div>
     </div>

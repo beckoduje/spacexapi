@@ -17,3 +17,9 @@ export const getDragonsData = async () => {
   const data = await res.json();
   return await data;
 };
+
+export const getRoadsterData = async () => {
+  const res = await fetch(`${api}/roadster`);
+  const data = await res.json();
+  return await data;
+};

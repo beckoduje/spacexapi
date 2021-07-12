@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function FalconNineSection() {
   return (
@@ -14,7 +15,9 @@ export default function FalconNineSection() {
               first orbital class reusable rocket. Reusability allows SpaceX to
               refly the most expensive parts of the rocket.
             </p>
-            <button type="text">READ MORE</button>
+            <button type="text">
+              <Link to="/rockets">READ MORE</Link>
+            </button>
           </div>
           <div className="white-box falcon-9"></div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Mission() {
   return (
@@ -11,7 +12,9 @@ export default function Mission() {
           will be the most powerful ever built, capable of carrying humans to
           Mars and other destinations in the solar system.
         </p>
-        <button type="text">READ MORE</button>
+        <button type="text">
+          <Link to="/about">READ MORE</Link>
+        </button>
       </div>
       <div className="white-box"></div>
     </div>

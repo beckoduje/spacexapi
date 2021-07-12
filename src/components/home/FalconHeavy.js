@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function FalconHeavy() {
   return (
@@ -14,7 +15,9 @@ export default function FalconHeavy() {
               payload of the next closest operational vehicle, the Delta IV
               Heavy.
             </p>
-            <button type="text">READ MORE</button>
+            <button type="text">
+              <Link to="/rockets">READ MORE</Link>
+            </button>
           </div>
           <div className="white-box falcon-heavy"></div>
         </div>

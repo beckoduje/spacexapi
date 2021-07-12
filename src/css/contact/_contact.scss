@@ -1,0 +1,24 @@
+.section.contact {
+  height: 100vh;
+  background-image: url("../images/earthAndSun.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .section-shader {
+    background: rgba(0, 0, 0, 0.96);
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+    justify-content: stretch;
+    height: 100vh;
+    padding-bottom: 3rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 2.65rem;
+      text-align: center;
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+  }
+}
