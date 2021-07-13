@@ -23,3 +23,9 @@ export const getRoadsterData = async () => {
   const data = await res.json();
   return await data;
 };
+
+export const getCrewData = async () => {
+  const res = await fetch(`${api}/crew`);
+  const data = await res.json();
+  return await data;
+};

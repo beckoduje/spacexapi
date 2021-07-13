@@ -1,161 +1,139 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getCrewData } from "../../../API.js";
 
 export default function MoleculesGrid() {
+  const [crewInfo, setCrewInfo] = useState();
+
+  useEffect(() => {
+    getCrewData("").then(function (value) {
+      setCrewInfo(value);
+    });
+  }, []);
+
   return (
-    // <div className="molecules-container">
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    //   <div className="molecules-row">
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule middle">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //     <div className="molecule">
-    //       <div className="left"></div>
-    //       <div className="middle"></div>
-    //       <div className="right"></div>
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="container">
-      <ol className="even">
-        <li className="hex"></li>
-        <li className="hex"></li>
-      </ol>
-      <ol className="odd">
-        <li className="hex">
-          <figure></figure>
-        </li>
-        <li className="hex"></li>
-        <li className="hex"></li>
-      </ol>
-      <ol className="even">
-        <li className="hex"></li>
-        <li className="hex"></li>
-      </ol>
+    <div className="cont">
+      <div className="row-cont">
+        <div className="molekula">
+          <div
+            className="member-img"
+            style={{ backgroundImage: crewInfo ? crewInfo[0].image : "none" }}
+          />
+          <div className="member-name">{crewInfo ? crewInfo[0].name : ""}</div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[1].name : ""}</div>
+        </div>
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[2].name : ""}</div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[3].name : ""}</div>
+        </div>
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[4].name : ""}</div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[5].name : ""}</div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[6].name : ""}</div>
+        </div>
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[7].name : ""}</div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[8].name : ""}</div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[9].name : ""}</div>
+        </div>
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[10].name : ""}</div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[11].name : ""}</div>
+        </div>
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[12].name : ""}</div>
+        </div>
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[13].name : ""}</div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[17].name : ""}</div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[14].name : ""}</div>
+        </div>
+        <div className="molekula">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[15].name : ""}</div>
+        </div>
+      </div>
+
+      <div className="row-cont">
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+        <div className="molekula middle">
+          <div className="member-img" />
+          <div className="member-name">{crewInfo ? crewInfo[16].name : ""}</div>
+        </div>
+        <div className="molekula hidden-molecule">
+          <div className="member-img" />
+          <div className="member-name"></div>
+        </div>
+      </div>
     </div>
   );
 }
