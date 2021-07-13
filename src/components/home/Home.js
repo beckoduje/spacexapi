@@ -15,8 +15,6 @@ export default function Home(props) {
   // const [stickyNav, setStickyNav] = useState(false);
   return (
     <div>
-      <h1>Di si Danijela?</h1>
-      <h2>Hej haj...</h2>
       <Menu />
       <Nav className="sticky-nav" stickyNav={props.stickyNav} />
       <MissionSection setStickyNav={props.setStickyNav} />
