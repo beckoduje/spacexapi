@@ -21,7 +21,7 @@
       padding-top: 2rem;
 
       &.middle {
-        transform: translateY(-135px);
+        transform: translateY(-133px);
       }
 
       &.hidden-molecule {
@@ -33,6 +33,62 @@
         height: 120px;
         border-radius: 50%;
         margin-bottom: 1rem;
+        background-size: cover;
+
+        &.mi-1 {
+          background-image: url("../images/crewImages/robertBehnken.jpg");
+        }
+        &.mi-2 {
+          background-image: url("../images/crewImages/douglasH.jfif");
+        }
+        &.mi-3 {
+          background-image: url("../images/crewImages/shannonWalker.jfif");
+        }
+        &.mi-4 {
+          background-image: url("../images/crewImages/soichiNoguchi.jfif");
+        }
+        &.mi-5 {
+          background-image: url("../images/crewImages/victorGlower.jfif");
+        }
+        &.mi-6 {
+          background-image: url("../images/crewImages/michaelHopkins.jfif");
+        }
+        &.mi-7 {
+          background-image: url("../images/crewImages/shaneKimbrough.jfif");
+        }
+        &.mi-8 {
+          background-image: url("../images/crewImages/kMeghan.jfif");
+        }
+        &.mi-9 {
+          background-image: url("../images/crewImages/thomasPesquet.jfif");
+        }
+        &.mi-10 {
+          background-image: url("../images/crewImages/akihikoH.jfif");
+        }
+        &.mi-11 {
+          background-image: url("../images/crewImages/rajaChari.jfif");
+        }
+        &.mi-12 {
+          background-image: url("../images/crewImages/tMarshburn.jfif");
+        }
+        &.mi-13 {
+          background-image: url("../images/crewImages/matthiasMaurer.jfif");
+        }
+        &.mi-14 {
+          background-image: url("../images/crewImages/jarredI.jfif");
+        }
+        &.mi-15 {
+          background-image: url("../images/crewImages/hayleyA.jfif");
+        }
+        &.mi-16 {
+          background-image: url("../images/crewImages/sianProctor.jfif");
+        }
+        &.mi-17 {
+          background-image: url("../images/crewImages/christoperS.jfif");
+        }
+        &.mi-18 {
+          background-image: url("../images/crewImages/kaylaBarron.jfif");
+        }
       }
 
       .member-name {

@@ -398,8 +398,8 @@
 }
 
 .cont .row-cont .molekula.middle {
-  -webkit-transform: translateY(-135px);
-          transform: translateY(-135px);
+  -webkit-transform: translateY(-133px);
+          transform: translateY(-133px);
 }
 
 .cont .row-cont .molekula.hidden-molecule {
@@ -411,6 +411,79 @@
   height: 120px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  background-size: cover;
+}
+
+.cont .row-cont .molekula .member-img.mi-1 {
+  background-image: url("../images/crewImages/robertBehnken.jpg");
+}
+
+.cont .row-cont .molekula .member-img.mi-2 {
+  background-image: url("../images/crewImages/douglasH.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-3 {
+  background-image: url("../images/crewImages/shannonWalker.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-4 {
+  background-image: url("../images/crewImages/soichiNoguchi.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-5 {
+  background-image: url("../images/crewImages/victorGlower.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-6 {
+  background-image: url("../images/crewImages/michaelHopkins.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-7 {
+  background-image: url("../images/crewImages/shaneKimbrough.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-8 {
+  background-image: url("../images/crewImages/kMeghan.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-9 {
+  background-image: url("../images/crewImages/thomasPesquet.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-10 {
+  background-image: url("../images/crewImages/akihikoH.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-11 {
+  background-image: url("../images/crewImages/rajaChari.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-12 {
+  background-image: url("../images/crewImages/tMarshburn.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-13 {
+  background-image: url("../images/crewImages/matthiasMaurer.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-14 {
+  background-image: url("../images/crewImages/jarredI.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-15 {
+  background-image: url("../images/crewImages/hayleyA.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-16 {
+  background-image: url("../images/crewImages/sianProctor.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-17 {
+  background-image: url("../images/crewImages/christoperS.jfif");
+}
+
+.cont .row-cont .molekula .member-img.mi-18 {
+  background-image: url("../images/crewImages/kaylaBarron.jfif");
 }
 
 .cont .row-cont .molekula .member-name {
