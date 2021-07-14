@@ -12,12 +12,21 @@ import Footer from "./Footer";
 import Menu from "../menu/Menu";
 
 export default function Home(props) {
-  // const [stickyNav, setStickyNav] = useState(false);
+  const [menuState, setMenuState] = useState(false);
   return (
     <div>
-      <Menu />
-      <Nav className="sticky-nav" stickyNav={props.stickyNav} />
-      <MissionSection setStickyNav={props.setStickyNav} />
+      <Menu menuState={menuState} setMenuState={setMenuState} />
+      <Nav
+        className="sticky-nav"
+        stickyNav={props.stickyNav}
+        menuState={menuState}
+        setMenuState={setMenuState}
+      />
+      <MissionSection
+        setStickyNav={props.setStickyNav}
+        menuState={menuState}
+        setMenuState={setMenuState}
+      />
       <FalconNineSection />
       <FalconHeavy />
       <Startship />

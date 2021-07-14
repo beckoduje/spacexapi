@@ -3,13 +3,16 @@
   background-image: url("../images/earthAndSun.png");
   background-position: 0 30%;
   background-repeat: no-repeat;
-  // za sad ovo doli iskomentirano da mogu lakše raditi
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  // z-index: 999;
-  // pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 
   .section-shader {
     height: 100%;

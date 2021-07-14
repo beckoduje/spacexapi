@@ -16,7 +16,7 @@ export default function Nav(props) {
       }
     >
       <Logo />
-      <NavLinks />
+      <NavLinks menuState={props.menuState} setMenuState={props.setMenuState} />
     </nav>
   );
 }

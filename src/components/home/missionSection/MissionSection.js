@@ -22,7 +22,7 @@ export default function MissionSection(props) {
   return (
     <section ref={ref} className="section mission">
       <div className="section-shader">
-        <Nav />
+        <Nav menuState={props.menuState} setMenuState={props.setMenuState} />
         <Mission />
       </div>
     </section>

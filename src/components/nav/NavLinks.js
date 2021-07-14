@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NavLinks() {
+export default function NavLinks({ menuState, setMenuState }) {
+  // console.log(props);
   return (
     <div className="nav-links-container">
       <ul className="nav-links-list">
@@ -21,7 +22,7 @@ export default function NavLinks() {
           <Link to="/crew">Crew</Link>
         </li>
       </ul>
-      <div className="hambi-links">
+      <div className="hambi-links" onClick={() => setMenuState(!menuState)}>
         <div className="hambi-cont top">
           <div className="hambi-long top"></div>
           <div className="hambi-circle top"></div>

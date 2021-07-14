@@ -464,6 +464,7 @@
 
 .cont .row-cont .molekula .member-img.mi-13 {
   background-image: url("../images/crewImages/matthiasMaurer.jfif");
+  background-position-x: -25px;
 }
 
 .cont .row-cont .molekula .member-img.mi-14 {
@@ -472,10 +473,12 @@
 
 .cont .row-cont .molekula .member-img.mi-15 {
   background-image: url("../images/crewImages/hayleyA.jfif");
+  background-position-x: -50px;
 }
 
 .cont .row-cont .molekula .member-img.mi-16 {
   background-image: url("../images/crewImages/sianProctor.jfif");
+  background-position-x: -11px;
 }
 
 .cont .row-cont .molekula .member-img.mi-17 {
@@ -1636,6 +1639,16 @@ footer ul li {
   background-image: url("../images/earthAndSun.png");
   background-position: 0 30%;
   background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: none;
+}
+
+.section.menu.active {
+  display: block;
 }
 
 .section.menu .section-shader {
