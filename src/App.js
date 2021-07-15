@@ -8,38 +8,46 @@ import Launches from "./components/launches/Launches";
 import Crew from "./components/crew/Crew";
 import Roadster from "./components/roadster/Roadster";
 import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [stickyNav, setStickyNav] = useState(false);
+  const [menuState, setMenuState] = useState(false);
 
   return (
     <Router>
+      <Menu menuState={menuState} setMenuState={setMenuState} />
       <Switch>
         <Route path="/contact">
-          <Contact />
+          <Contact menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/roadster">
-          <Roadster />
+          <Roadster menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/crew">
-          <Crew />
+          <Crew menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/launches">
-          <Launches />
+          <Launches menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/dragons">
-          <Dragons />
+          <Dragons menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/rockets">
-          <Rockets />
+          <Rockets menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/about">
-          <About />
+          <About menuState={menuState} setMenuState={setMenuState} />
         </Route>
         <Route path="/">
-          <Home stickyNav={stickyNav} setStickyNav={setStickyNav} />
+          <Home
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
       </Switch>
     </Router>

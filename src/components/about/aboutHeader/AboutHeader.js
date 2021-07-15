@@ -4,6 +4,7 @@ import AboutMessageOne from "./AboutMessageOne";
 import AboutMessageTwo from "./AboutMessageTwo";
 
 export default function AboutHeader(props) {
+  // console.log(props);
   return (
     <section className="section about-header">
       <div className="section-shader">

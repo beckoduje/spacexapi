@@ -13,7 +13,10 @@ export default function Menu(props) {
           menuState={props.menuState}
           setMenuState={props.setMenuState}
         />
-        <MenuLinks />
+        <MenuLinks
+          menuState={props.menuState}
+          setMenuState={props.setMenuState}
+        />
       </div>
     </section>
   );

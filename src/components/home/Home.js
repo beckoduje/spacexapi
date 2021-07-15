@@ -9,23 +9,22 @@ import Launches from "./Launches";
 import CrewMembers from "./crewSection/CrewMembers";
 import Subscription from "./Subscription";
 import Footer from "./Footer";
-import Menu from "../menu/Menu";
+// import Menu from "../menu/Menu";
 
 export default function Home(props) {
-  const [menuState, setMenuState] = useState(false);
   return (
     <div>
-      <Menu menuState={menuState} setMenuState={setMenuState} />
+      {/* <Menu menuState={props.menuState} setMenuState={props.setMenuState} /> */}
       <Nav
         className="sticky-nav"
         stickyNav={props.stickyNav}
-        menuState={menuState}
-        setMenuState={setMenuState}
+        menuState={props.menuState}
+        setMenuState={props.setMenuState}
       />
       <MissionSection
         setStickyNav={props.setStickyNav}
-        menuState={menuState}
-        setMenuState={setMenuState}
+        menuState={props.menuState}
+        setMenuState={props.setMenuState}
       />
       <FalconNineSection />
       <FalconHeavy />

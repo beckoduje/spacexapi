@@ -1,29 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function MenuLinks() {
+export default function MenuLinks({ menuState, setMenuState }) {
   return (
     <ul className="menu-links-container">
       <li>
-        <Link to="/about">About Us</Link>
+        <Link to="/about" onClick={() => setMenuState(!menuState)}>
+          About Us
+        </Link>
       </li>
       <li>
-        <Link to="/rockets">Rockets</Link>
+        <Link to="/rockets" onClick={() => setMenuState(!menuState)}>
+          Rockets
+        </Link>
       </li>
       <li>
-        <Link to="/dragons">Dragons</Link>
+        <Link to="/dragons" onClick={() => setMenuState(!menuState)}>
+          Dragons
+        </Link>
       </li>
       <li>
-        <Link to="/launches">Launches</Link>
+        <Link to="/launches" onClick={() => setMenuState(!menuState)}>
+          Launches
+        </Link>
       </li>
       <li>
-        <Link to="/crew">Crew</Link>
+        <Link to="/crew" onClick={() => setMenuState(!menuState)}>
+          Crew
+        </Link>
       </li>
       <li>
-        <Link to="/roadster">Roadster</Link>
+        <Link to="/roadster" onClick={() => setMenuState(!menuState)}>
+          Roadster
+        </Link>
       </li>
       <li>
-        <Link to="/contact">Contact Us</Link>
+        <Link to="/contact" onClick={() => setMenuState(!menuState)}>
+          Contact Us
+        </Link>
       </li>
     </ul>
   );

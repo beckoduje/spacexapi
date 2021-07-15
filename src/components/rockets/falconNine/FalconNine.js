@@ -2,10 +2,13 @@ import React from "react";
 import FalconNineHeader from "./FalconNineHeader";
 import FalconNineStats from "./FalconNineStats";
 
-export default function FalconNine() {
+export default function FalconNine(props) {
   return (
     <section className="section-falcon">
-      <FalconNineHeader />
+      <FalconNineHeader
+        menuState={props.menuState}
+        setMenuState={props.setMenuState}
+      />
       <FalconNineStats />
     </section>
   );

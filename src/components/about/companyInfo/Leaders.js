@@ -42,7 +42,7 @@ export default function Leaders() {
           <div className="leader-name">
             {companyInfo ? companyInfo.ceo : ""}
           </div>
-          <div className="leader-position">Ceo&amp;Cto</div>
+          <div className="leader-position">Ceo &amp; Cto</div>
         </div>
       </div>
       <div className="leader">
