@@ -22,7 +22,7 @@ export default function DragonStatsSlideTwo() {
           They orient the rocket during reentry by moving the center of
           pressure.
         </p>
-        <div className="stat-cont">
+        {/* <div className="stat-cont">
           <div>Volume:</div>
           <div>
             {dragonsInfo ? dragonsInfo[1].trunk.trunk_volume.cubic_meters : ""}
@@ -30,7 +30,7 @@ export default function DragonStatsSlideTwo() {
             {dragonsInfo ? dragonsInfo[1].trunk.trunk_volume.cubic_feet : ""}
             ft3
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import StarshipStatsSlideOne from "./StarshipStatsSlideOne";
 import StarshipStatsSlideTwo from "./StarshipStatsSlideTwo";
 import StarshipStatsSlideThree from "./StarshipStatsSlideThree";
-import StarshipStatsSlideFour from "./StarshipStatsSlideFour";
 
 export default function StarshipStats() {
   let sliderStarship;
@@ -53,7 +52,6 @@ export default function StarshipStats() {
           <StarshipStatsSlideOne />
           <StarshipStatsSlideTwo />
           <StarshipStatsSlideThree />
-          <StarshipStatsSlideFour />
           <button
             className="slide-btn slide-btn--left"
             onClick={prevSlideStarship}

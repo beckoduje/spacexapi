@@ -31,6 +31,7 @@
       .company-stats {
         font-size: 3rem;
         display: flex;
+        justify-content: space-between;
 
         .stats-label {
           flex-basis: 25%;
@@ -40,6 +41,7 @@
       .social-icons-container {
         display: flex;
         font-size: 3rem;
+        justify-content: center;
 
         .social-icon {
           margin-right: 7rem;

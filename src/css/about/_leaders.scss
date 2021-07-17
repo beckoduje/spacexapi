@@ -9,7 +9,7 @@
     flex-basis: 28%;
     height: 33vw;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr max-content;
     grid-template-columns: 1fr 1fr;
     background: rgba(255, 255, 255, 0.24);
     border-radius: 12px;
@@ -46,9 +46,21 @@
     .leader-position {
       text-align: center;
     }
+
+    i {
+      font-size: 4rem;
+      justify-self: center;
+      grid-column: 1/3;
+      padding-bottom: 5rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
   }
 
   .leader.middle {
     transform: scale(1.05) translateY(-15px);
+
+    i {
+      color: rgba(255, 255, 255, 0.95);
+    }
   }
 }

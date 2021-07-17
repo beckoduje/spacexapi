@@ -21,7 +21,7 @@ export default function DragonStatsSlideThree() {
           while on orbit and 8 SuperDracos that power the spacecraft’s launch
           escape system.
         </p>
-        <div className="stat-cont">
+        {/* <div className="stat-cont">
           <div>Volume:</div>
           <div>
             {dragonsInfo
@@ -33,7 +33,7 @@ export default function DragonStatsSlideThree() {
               : ""}
             ft3
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

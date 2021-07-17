@@ -29,6 +29,7 @@ export default function Leaders() {
           </div>
           <div className="leader-position">Coo</div>
         </div>
+        <i className="fas fa-certificate"></i>
       </div>
       <div className="leader middle">
         <figure>
@@ -44,6 +45,7 @@ export default function Leaders() {
           </div>
           <div className="leader-position">Ceo &amp; Cto</div>
         </div>
+        <i className="fab fa-centos"></i>
       </div>
       <div className="leader">
         <figure>
@@ -59,6 +61,7 @@ export default function Leaders() {
           </div>
           <div className="leader-position">Cto propulsion</div>
         </div>
+        <i className="fas fa-certificate"></i>
       </div>
     </div>
   );
