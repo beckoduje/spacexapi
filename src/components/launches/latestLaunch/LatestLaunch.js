@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import LatestLaunchDescription from "./LatestLaunchDescription";
 import LatestLaunchStats from "./LatestLaunchStats";
 
 export default function LatestLaunch() {
@@ -50,6 +51,7 @@ export default function LatestLaunch() {
         </div>
         <div className="slides-wrapper">
           <LatestLaunchStats />
+          <LatestLaunchDescription />
           <button className="slide-btn slide-btn--left" onClick={prevSlide}>
             <i className="fas fa-arrow-alt-circle-left"></i>
           </button>

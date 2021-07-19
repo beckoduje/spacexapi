@@ -1,39 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getNextLaunchData, getLaunchpadData } from "../../../API.js";
 
 export default function NextLaunchStats() {
+  const [nextLaunchInfo, setNextLaunchInfo] = useState();
+  const [launchpadData, setLaunchpadData] = useState();
+
+  useEffect(() => {
+    getNextLaunchData("").then(function (value) {
+      setNextLaunchInfo(value);
+    });
+    getLaunchpadData(nextLaunchInfo.launchpad).then(function (value) {
+      setLaunchpadData(value);
+    });
+  }, []);
   return (
     <div className="next-launch-stats">
       <div className="nl-single-stat-cont">
         <div>Name:</div>
-        <div>Polar Starlink 1</div>
+        <div>{nextLaunchInfo ? nextLaunchInfo.name : ""}</div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Flight Number:</div>
-        <div>133</div>
+        <div>{nextLaunchInfo ? nextLaunchInfo.flight_number : ""}</div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Date:</div>
-        <div>31/07/2021</div>
+        <div>
+          {nextLaunchInfo
+            ? nextLaunchInfo.date_local.slice(0, 10).replaceAll("-", "/")
+            : ""}
+        </div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Launchpad:</div>
-        <div>VAFB SLC 3W</div>
+        <div>{launchpadData ? launchpadData.name : ""}</div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Launchpad region:</div>
-        <div>California</div>
+        <div>{launchpadData ? launchpadData.region : ""}</div>
       </div>
-      <div className="nl-single-stat-cont">
+      {/* <div className="nl-single-stat-cont">
         <div>Landpad:</div>
-        <div>LZ-1</div>
-      </div>
+        <div>{nextLaunchInfo ? nextLaunchInfo.name : ""}</div>
+      </div> */}
       <div className="nl-single-stat-cont">
         <div>Rocket:</div>
-        <div>Falcon 9</div>
+        <div>{nextLaunchInfo ? nextLaunchInfo.rocket : ""}</div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Ship:</div>
-        <div>Of course I still love you</div>
+        <div>{nextLaunchInfo ? "TBA" || nextLaunchInfo.ships[0] : ""}</div>
       </div>
     </div>
   );

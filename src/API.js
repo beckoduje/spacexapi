@@ -12,8 +12,32 @@ export const getRocketData = async () => {
   return await data;
 };
 
+export const getSingleRocketData = async (rocket) => {
+  const res = await fetch(`${api}/rockets/${rocket}`);
+  const data = await res.json();
+  return await data;
+};
+
 export const getDragonsData = async () => {
   const res = await fetch(`${api}/dragons`);
+  const data = await res.json();
+  return await data;
+};
+
+export const getNextLaunchData = async () => {
+  const res = await fetch(`${api}/launches/next`);
+  const data = await res.json();
+  return await data;
+};
+
+export const getLaunchpadData = async (launchpad) => {
+  const res = await fetch(`${api}/launchpads/${launchpad}`);
+  const data = await res.json();
+  return await data;
+};
+
+export const getLatestLaunchData = async () => {
+  const res = await fetch(`${api}/launches/latest`);
   const data = await res.json();
   return await data;
 };
