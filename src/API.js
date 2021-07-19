@@ -53,3 +53,9 @@ export const getCrewData = async () => {
   const data = await res.json();
   return await data;
 };
+
+export const getShipData = async (ship) => {
+  const res = await fetch(`${api}/ships/${ship}`);
+  const data = await res.json();
+  return await data;
+};

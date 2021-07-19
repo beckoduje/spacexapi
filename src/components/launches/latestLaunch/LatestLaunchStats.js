@@ -1,12 +1,29 @@
 import React, { useState, useEffect } from "react";
-import { getLatestLaunchData } from "../../../API.js";
+import {
+  getLatestLaunchData,
+  getLaunchpadData,
+  getSingleRocketData,
+  getShipData,
+} from "../../../API.js";
 
 export default function LatestLaunchStats() {
   const [latestLaunchInfo, setLatestLaunchInfo] = useState();
+  const [launchpadData, setLaunchpadData] = useState();
+  const [latestRocket, setLatestRocket] = useState();
+  const [shipInfo, setShipInfo] = useState();
 
   useEffect(() => {
     getLatestLaunchData("").then(function (value) {
       setLatestLaunchInfo(value);
+      getLaunchpadData(value.launchpad).then(function (value2) {
+        setLaunchpadData(value2);
+      });
+      getSingleRocketData(value.rocket).then(function (val3) {
+        setLatestRocket(val3);
+      });
+      getShipData(value.ships[0]).then(function (val4) {
+        setShipInfo(val4);
+      });
     });
   }, []);
 
@@ -31,25 +48,19 @@ export default function LatestLaunchStats() {
         </div>
         <div className="nl-single-stat-cont">
           <div>Launchpad:</div>
-          <div>{latestLaunchInfo ? latestLaunchInfo.launchpad : ""}</div>
+          <div>{launchpadData ? launchpadData.name : ""}</div>
         </div>
-        {/* <div className="nl-single-stat-cont">
+        <div className="nl-single-stat-cont">
           <div>Launchpad region:</div>
-          <div>California</div>
-        </div> */}
-        {/* <div className="nl-single-stat-cont">
-          <div>Landpad:</div>
-          <div>LZ-1</div>
-        </div> */}
+          <div>{launchpadData ? launchpadData.region : ""}</div>
+        </div>
         <div className="nl-single-stat-cont">
           <div>Rocket:</div>
-          <div>{latestLaunchInfo ? latestLaunchInfo.rocket : ""}</div>
+          <div>{latestRocket ? latestRocket.name : ""}</div>
         </div>
         <div className="nl-single-stat-cont">
           <div>Ship:</div>
-          <div>
-            {latestLaunchInfo ? "TBA" || latestLaunchInfo.ships[0] : ""}
-          </div>
+          <div>{shipInfo ? shipInfo.name || "TBA" : ""}</div>
         </div>
       </div>
     </div>

@@ -1,18 +1,32 @@
 import React, { useState, useEffect } from "react";
-import { getNextLaunchData, getLaunchpadData } from "../../../API.js";
+import {
+  getNextLaunchData,
+  getLaunchpadData,
+  getSingleRocketData,
+  getShipData,
+} from "../../../API.js";
 
 export default function NextLaunchStats() {
   const [nextLaunchInfo, setNextLaunchInfo] = useState();
   const [launchpadData, setLaunchpadData] = useState();
+  const [nextRocket, setNextRocket] = useState();
+  const [shipInfo, setShipInfo] = useState();
 
   useEffect(() => {
     getNextLaunchData("").then(function (value) {
       setNextLaunchInfo(value);
-    });
-    getLaunchpadData(nextLaunchInfo.launchpad).then(function (value) {
-      setLaunchpadData(value);
+      getLaunchpadData(value.launchpad).then(function (value2) {
+        setLaunchpadData(value2);
+      });
+      getSingleRocketData(value.rocket).then(function (val3) {
+        setNextRocket(val3);
+      });
+      getShipData(value.ships[0]).then(function (val4) {
+        setShipInfo(val4);
+      });
     });
   }, []);
+
   return (
     <div className="next-launch-stats">
       <div className="nl-single-stat-cont">
@@ -39,17 +53,13 @@ export default function NextLaunchStats() {
         <div>Launchpad region:</div>
         <div>{launchpadData ? launchpadData.region : ""}</div>
       </div>
-      {/* <div className="nl-single-stat-cont">
-        <div>Landpad:</div>
-        <div>{nextLaunchInfo ? nextLaunchInfo.name : ""}</div>
-      </div> */}
       <div className="nl-single-stat-cont">
         <div>Rocket:</div>
-        <div>{nextLaunchInfo ? nextLaunchInfo.rocket : ""}</div>
+        <div>{nextRocket ? nextRocket.name : ""}</div>
       </div>
       <div className="nl-single-stat-cont">
         <div>Ship:</div>
-        <div>{nextLaunchInfo ? "TBA" || nextLaunchInfo.ships[0] : ""}</div>
+        <div>{shipInfo ? shipInfo.name || "TBA" : ""}</div>
       </div>
     </div>
   );
