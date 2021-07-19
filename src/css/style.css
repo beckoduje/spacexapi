@@ -2010,8 +2010,21 @@ footer ul li a {
       justify-self: center;
 }
 
-.form-container .form-group label {
+.form-container .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .form-group input:placeholder-shown + label {
   position: absolute;
+  font-size: 1.8rem;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  opacity: 0;
 }
 
 .form-container .form-group input {
@@ -2026,6 +2039,16 @@ footer ul li a {
   color: white;
   font-weight: 500;
   border-radius: 12px;
+}
+
+.form-container .form-group.textarea {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.form-container .form-group.textarea label {
+  margin-top: 1.5rem;
 }
 
 .form-container .form-group.textarea textarea {

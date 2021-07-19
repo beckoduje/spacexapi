@@ -6,9 +6,28 @@
   justify-self: center;
 
   .form-group {
-    label {
+    display: flex;
+    align-items: center;
+
+    // label {
+    //   position: absolute;
+    //   font-size: 1.8rem;
+    //   transform: translateX(10px);
+    //   opacity: 0;
+    // }
+
+    input:placeholder-shown + label {
       position: absolute;
+      font-size: 1.8rem;
+      transform: translateX(10px);
+      opacity: 0;
     }
+
+    //   &__input:placeholder-shown + &__label {
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     transform: translateY(-4rem);
+    // }
 
     input {
       outline: none;
@@ -25,6 +44,12 @@
     }
 
     &.textarea {
+      align-items: flex-start;
+
+      label {
+        margin-top: 1.5rem;
+      }
+
       textarea {
         height: 100%;
         resize: none;

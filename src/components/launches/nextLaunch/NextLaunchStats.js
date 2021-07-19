@@ -21,9 +21,11 @@ export default function NextLaunchStats() {
       getSingleRocketData(value.rocket).then(function (val3) {
         setNextRocket(val3);
       });
-      getShipData(value.ships[0]).then(function (val4) {
-        setShipInfo(val4);
-      });
+      if (value.ships.length !== 0) {
+        getShipData(value.ships[0]).then(function (val4) {
+          setShipInfo(val4);
+        });
+      }
     });
   }, []);
 
@@ -59,7 +61,7 @@ export default function NextLaunchStats() {
       </div>
       <div className="nl-single-stat-cont">
         <div>Ship:</div>
-        <div>{shipInfo ? shipInfo.name || "TBA" : ""}</div>
+        <div>{shipInfo ? shipInfo.name : "TBA"}</div>
       </div>
     </div>
   );
