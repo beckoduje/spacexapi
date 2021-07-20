@@ -8,6 +8,8 @@ export default function FalconNine(props) {
       <FalconNineHeader
         menuState={props.menuState}
         setMenuState={props.setMenuState}
+        stickyNav={props.stickyNav}
+        setStickyNav={props.setStickyNav}
       />
       <FalconNineStats />
     </section>

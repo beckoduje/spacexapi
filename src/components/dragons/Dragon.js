@@ -8,6 +8,8 @@ export default function Dragon(props) {
       <DragonHeader
         menuState={props.menuState}
         setMenuState={props.setMenuState}
+        stickyNav={props.stickyNav}
+        setStickyNav={props.setStickyNav}
       />
       <DragonStats />
     </section>

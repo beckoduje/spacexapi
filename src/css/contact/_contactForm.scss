@@ -9,25 +9,18 @@
     display: flex;
     align-items: center;
 
-    // label {
-    //   position: absolute;
-    //   font-size: 1.8rem;
-    //   transform: translateX(10px);
-    //   opacity: 0;
-    // }
-
-    input:placeholder-shown + label {
+    label {
       position: absolute;
       font-size: 1.8rem;
-      transform: translateX(10px);
-      opacity: 0;
+      transform: translateX(-115%);
+      opacity: 1;
+      transition: all 0.3s;
     }
 
-    //   &__input:placeholder-shown + &__label {
-    //     opacity: 0;
-    //     visibility: hidden;
-    //     transform: translateY(-4rem);
-    // }
+    input:placeholder-shown + label {
+      font-size: 1.8rem;
+      opacity: 0;
+    }
 
     input {
       outline: none;
@@ -64,6 +57,11 @@
         color: white;
         font-weight: 500;
         border-radius: 12px;
+
+        &:placeholder-shown + label {
+          font-size: 1.8rem;
+          opacity: 0;
+        }
       }
     }
   }

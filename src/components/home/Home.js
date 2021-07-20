@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from "../nav/Nav";
 import MissionSection from "./missionSection/MissionSection";
 import FalconNineSection from "./FalconNineSection";
@@ -9,12 +9,10 @@ import Launches from "./Launches";
 import CrewMembers from "./crewSection/CrewMembers";
 import Subscription from "./Subscription";
 import Footer from "./Footer";
-// import Menu from "../menu/Menu";
 
 export default function Home(props) {
   return (
     <div>
-      {/* <Menu menuState={props.menuState} setMenuState={props.setMenuState} /> */}
       <Nav
         className="sticky-nav"
         stickyNav={props.stickyNav}

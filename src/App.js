@@ -21,25 +21,60 @@ function App() {
       <Menu menuState={menuState} setMenuState={setMenuState} />
       <Switch>
         <Route path="/contact">
-          <Contact menuState={menuState} setMenuState={setMenuState} />
+          <Contact
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/roadster">
-          <Roadster menuState={menuState} setMenuState={setMenuState} />
+          <Roadster
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/crew">
-          <Crew menuState={menuState} setMenuState={setMenuState} />
+          <Crew
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/launches">
-          <Launches menuState={menuState} setMenuState={setMenuState} />
+          <Launches
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/dragons">
-          <Dragons menuState={menuState} setMenuState={setMenuState} />
+          <Dragons
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/rockets">
-          <Rockets menuState={menuState} setMenuState={setMenuState} />
+          <Rockets
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/about">
-          <About menuState={menuState} setMenuState={setMenuState} />
+          <About
+            menuState={menuState}
+            setMenuState={setMenuState}
+            stickyNav={stickyNav}
+            setStickyNav={setStickyNav}
+          />
         </Route>
         <Route path="/">
           <Home

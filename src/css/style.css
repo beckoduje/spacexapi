@@ -2019,11 +2019,18 @@ footer ul li a {
           align-items: center;
 }
 
-.form-container .form-group input:placeholder-shown + label {
+.form-container .form-group label {
   position: absolute;
   font-size: 1.8rem;
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: translateX(-115%);
+          transform: translateX(-115%);
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form-container .form-group input:placeholder-shown + label {
+  font-size: 1.8rem;
   opacity: 0;
 }
 
@@ -2065,6 +2072,11 @@ footer ul li a {
   color: white;
   font-weight: 500;
   border-radius: 12px;
+}
+
+.form-container .form-group.textarea textarea:placeholder-shown + label {
+  font-size: 1.8rem;
+  opacity: 0;
 }
 
 .form-container .submit-btn {
