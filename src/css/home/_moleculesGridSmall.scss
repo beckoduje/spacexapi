@@ -1,0 +1,17 @@
+.cont.small-size-cont {
+  display: none;
+}
+
+/* 1000px */
+@media only screen and (max-width: 680px /*xyrem*/) {
+  .cont.small-size-cont {
+    display: flex;
+    flex-direction: column;
+
+    .row-cont {
+      .molekula:last-child {
+        transform: translateY(-88px);
+      }
+    }
+  }
+}

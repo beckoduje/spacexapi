@@ -11,6 +11,7 @@ import Subscription from "./Subscription";
 import Footer from "./Footer";
 
 export default function Home(props) {
+  // console.log(props);
   return (
     <div>
       <Nav

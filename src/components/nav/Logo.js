@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Logo() {
+export default function Logo({ menuState, setMenuState }) {
   return (
-    <div className="logo-container">
+    <div className="logo-container" onClick={() => setMenuState(false)}>
       <Link to="/">
         <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50">
           <title>SpaceX Logo</title>

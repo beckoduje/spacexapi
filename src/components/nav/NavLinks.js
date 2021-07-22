@@ -6,19 +6,19 @@ export default function NavLinks({ menuState, setMenuState }) {
   return (
     <div className="nav-links-container">
       <ul className="nav-links-list">
-        <li>
+        <li onClick={() => setMenuState(false)}>
           <Link to="/about">About Us</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuState(false)}>
           <Link to="/rockets">Rockets</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuState(false)}>
           <Link to="/dragons">Dragons</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuState(false)}>
           <Link to="/launches">Launches</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuState(false)}>
           <Link to="/crew">Crew</Link>
         </li>
       </ul>

@@ -30,6 +30,15 @@
           justify-content: space-between;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,12 +132,30 @@
   padding: 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  -webkit-transition: height 1s;
+  transition: height 1s;
 }
 
 .nav.sticky-nav.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+/* 1200px */
+@media only screen and (max-width: 1200px) {
+  .nav-links-list li {
+    display: none;
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .nav.sticky-nav {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .logo-container svg {
@@ -229,6 +256,13 @@
   right: 9rem;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.falcon-9 .section-shader {
+    padding: 5rem;
+  }
+}
+
 .section.falcon-heavy {
   background-image: url("../images/falconHeavyLaunching.jpg");
   background-size: cover;
@@ -249,6 +283,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.falcon-heavy .section-shader {
+    padding: 5rem;
+  }
 }
 
 .section.starship {
@@ -300,6 +341,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.dragon .section-shader {
+    padding: 5rem;
+  }
 }
 
 .section.recent-launch {
@@ -357,6 +405,15 @@
   margin-bottom: 20rem;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.crew {
+    padding: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
 .cont {
   width: 100%;
   margin-right: 70px;
@@ -408,8 +465,8 @@
 }
 
 .cont .row-cont .molekula .member-img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   margin-bottom: 1rem;
   background-size: cover;
@@ -492,6 +549,86 @@
 
 .cont .row-cont .molekula .member-name {
   font-size: 1.6rem;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .cont {
+    margin-right: 59px;
+  }
+  .cont .row-cont {
+    margin-top: 3px;
+  }
+  .cont .row-cont .molekula {
+    margin-right: -59px;
+    width: 250px;
+    height: 217.5px;
+  }
+  .cont .row-cont .molekula.middle {
+    -webkit-transform: translateY(-110px);
+            transform: translateY(-110px);
+  }
+  .cont .row-cont .molekula .member-img {
+    width: 120px;
+    height: 120px;
+  }
+  .cont .row-cont .molekula .member-name {
+    font-size: 1.4rem;
+  }
+}
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+  .cont {
+    margin-right: 47px;
+  }
+  .cont .row-cont {
+    margin-top: 3px;
+  }
+  .cont .row-cont .molekula {
+    margin-right: -47px;
+    width: 200px;
+    height: 174px;
+  }
+  .cont .row-cont .molekula.middle {
+    -webkit-transform: translateY(-89px);
+            transform: translateY(-89px);
+  }
+  .cont .row-cont .molekula .member-img {
+    width: 90px;
+    height: 90px;
+  }
+  .cont .row-cont .molekula .member-name {
+    font-size: 1.1rem;
+  }
+}
+
+/* 680px */
+@media only screen and (max-width: 680px) {
+  .cont.big-size-cont {
+    display: none;
+  }
+}
+
+.cont.small-size-cont {
+  display: none;
+}
+
+/* 1000px */
+@media only screen and (max-width: 680px) {
+  .cont.small-size-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cont.small-size-cont .row-cont .molekula:last-child {
+    -webkit-transform: translateY(-88px);
+            transform: translateY(-88px);
+  }
 }
 
 .section.subscription {
@@ -624,6 +761,15 @@ footer ul li a {
   margin-bottom: 40rem;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.about-header .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .about-message {
   position: relative;
   display: block;
@@ -682,6 +828,15 @@ footer ul li a {
 .section.company-info .section-shader {
   background: rgba(0, 0, 0, 0.6);
   padding-top: 20rem;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.company-info .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
 }
 
 .leaders-container {
@@ -1363,6 +1518,15 @@ footer ul li a {
   font-size: 1.75rem;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.dragon-header .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .dragon-description-container {
   position: relative;
   display: block;
@@ -1534,6 +1698,15 @@ footer ul li a {
           transform: translate(0, -50%);
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.dragon-stats .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .section.next-launch {
   background-image: url("../images/ofCourseIStillLoveYou.jpg");
   background-size: cover;
@@ -1588,6 +1761,15 @@ footer ul li a {
   height: 134%;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 12px;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.next-launch .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
 }
 
 .next-launch-stats {
@@ -1811,6 +1993,15 @@ footer ul li a {
   border-bottom: 1px solid white;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.menu .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+}
+
 .menu-links-container {
   -ms-flex-item-align: center;
       align-self: center;
@@ -1866,6 +2057,15 @@ footer ul li a {
   margin-top: 10rem;
   margin-bottom: 8rem;
   font-weight: 900;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.roadster .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
 }
 
 .roadster-info-container {
@@ -1996,6 +2196,15 @@ footer ul li a {
   margin-top: 6rem;
   margin-bottom: 2rem;
   font-weight: 500;
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.contact .section-shader {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
 }
 
 .form-container {

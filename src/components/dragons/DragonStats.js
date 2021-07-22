@@ -12,7 +12,7 @@ export default function DragonStats() {
     slider = document.querySelectorAll(".slider-nine");
     maxSlide = slider.length;
     init();
-  }, []);
+  });
 
   const goToSlide = function (slide) {
     slider.forEach(

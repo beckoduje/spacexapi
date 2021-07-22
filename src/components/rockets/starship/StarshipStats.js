@@ -12,7 +12,7 @@ export default function StarshipStats() {
     sliderStarship = document.querySelectorAll(".slider-starship");
     maxSlideStarship = sliderStarship.length;
     initStarship();
-  }, []);
+  });
 
   const goToSlideStarship = function (slide) {
     sliderStarship.forEach(

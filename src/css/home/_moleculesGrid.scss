@@ -29,8 +29,8 @@
       }
 
       .member-img {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         margin-bottom: 1rem;
         background-size: cover;
@@ -98,5 +98,68 @@
         font-size: 1.6rem;
       }
     }
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px /*xyrem*/) {
+  .cont {
+    margin-right: 59px;
+    .row-cont {
+      margin-top: 3px;
+      .molekula {
+        margin-right: -59px;
+        width: 250px;
+        height: 217.5px;
+
+        &.middle {
+          transform: translateY(-110px);
+        }
+
+        .member-img {
+          width: 120px;
+          height: 120px;
+        }
+
+        .member-name {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+/* 800px */
+@media only screen and (max-width: 800px /*xyrem*/) {
+  .cont {
+    margin-right: 47px;
+    .row-cont {
+      margin-top: 3px;
+      .molekula {
+        margin-right: -47px;
+        width: 200px;
+        height: 174px;
+
+        &.middle {
+          transform: translateY(-89px);
+        }
+
+        .member-img {
+          width: 90px;
+          height: 90px;
+        }
+
+        .member-name {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+/* 680px */
+@media only screen and (max-width: 680px /*xyrem*/) {
+  .cont.big-size-cont {
+    display: none;
   }
 }

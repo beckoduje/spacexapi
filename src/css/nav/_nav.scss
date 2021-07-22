@@ -71,8 +71,27 @@
   padding: 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  transition: height 1s;
 }
 
 .nav.sticky-nav.active {
   display: flex;
+}
+
+/* 1200px */
+@media only screen and (max-width: 1200px /*82rem*/) {
+  .nav-links-list {
+    li {
+      display: none;
+    }
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px /*xyrem*/) {
+  .nav.sticky-nav {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }

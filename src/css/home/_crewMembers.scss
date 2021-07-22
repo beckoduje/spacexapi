@@ -17,3 +17,12 @@
     margin-bottom: 20rem;
   }
 }
+
+/* 1000px */
+@media only screen and (max-width: 1000px /*xyrem*/) {
+  .section.crew {
+    padding: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

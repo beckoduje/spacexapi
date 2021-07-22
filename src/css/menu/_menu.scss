@@ -31,3 +31,14 @@
     }
   }
 }
+
+/* 1000px */
+@media only screen and (max-width: 1000px /*xyrem*/) {
+  .section.menu {
+    .section-shader {
+      padding: 5rem;
+      padding-top: 3rem;
+      padding-bottom: 7rem;
+    }
+  }
+}

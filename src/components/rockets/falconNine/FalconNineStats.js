@@ -13,7 +13,7 @@ export default function FalconNineStats() {
     slider = document.querySelectorAll(".slider-nine");
     maxSlide = slider.length;
     init();
-  }, []);
+  });
 
   const goToSlide = function (slide) {
     slider.forEach(

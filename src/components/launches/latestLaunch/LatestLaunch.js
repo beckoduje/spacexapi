@@ -11,7 +11,7 @@ export default function LatestLaunch() {
     slider = document.querySelectorAll(".slider-launch");
     maxSlide = slider.length;
     init();
-  }, []);
+  });
 
   const goToSlide = function (slide) {
     slider.forEach(

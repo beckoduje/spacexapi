@@ -13,7 +13,7 @@ export default function FalconHeavyStats() {
     sliderHeavy = document.querySelectorAll(".slider-heavy");
     maxSlideHeavy = sliderHeavy.length;
     initHeavy();
-  }, []);
+  });
 
   const goToSlideHeavy = function (slide) {
     sliderHeavy.forEach(
