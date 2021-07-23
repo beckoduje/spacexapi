@@ -22,3 +22,32 @@ footer {
     }
   }
 }
+
+/* 1090px */
+@media only screen and (max-width: 1090px /*xyrem*/) {
+  footer {
+    justify-content: space-between;
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px /*xyrem*/) {
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  footer {
+    ul {
+      li {
+        font-size: 1.4rem;
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+}

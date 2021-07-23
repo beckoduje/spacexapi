@@ -39,6 +39,22 @@
   }
 }
 
+/* 970px */
+@media only screen and (max-width: 970px) {
+  .section.mission {
+    background-size: cover;
+  }
+}
+
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.mission .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,6 +242,36 @@
   border-radius: 12px;
 }
 
+/* 970px */
+@media only screen and (max-width: 970px) {
+  .section-info-container {
+    width: 50rem;
+  }
+  .section-info-container .section-info {
+    width: 50rem;
+    padding: 3rem;
+  }
+  .section-info-container .section-info h2 {
+    font-size: 2.2rem;
+  }
+  .section-info-container .white-box {
+    top: -1.5rem;
+    right: -1.9rem;
+    width: 43rem;
+    height: 111%;
+  }
+}
+
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section-info-container .white-box {
+    top: 4rem;
+    right: -1.5rem;
+    width: 53rem;
+    height: 91%;
+  }
+}
+
 .section.falcon-9 {
   background-image: url("../images/falcon9dark.jpg");
   background-size: cover;
@@ -263,6 +309,18 @@
   }
 }
 
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.falcon-9 .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section.falcon-9 .section-shader .white-box.falcon-9 {
+    right: -1.5rem;
+  }
+}
+
 .section.falcon-heavy {
   background-image: url("../images/falconHeavyLaunching.jpg");
   background-size: cover;
@@ -289,6 +347,15 @@
 @media only screen and (max-width: 1000px) {
   .section.falcon-heavy .section-shader {
     padding: 5rem;
+  }
+}
+
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.falcon-heavy .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -322,6 +389,18 @@
   right: 9rem;
 }
 
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.starship .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section.starship .section-shader .white-box.starship {
+    right: -1.5rem;
+  }
+}
+
 .section.dragon {
   background-image: url("../images/dragon.jpg");
   background-size: cover;
@@ -347,6 +426,15 @@
 @media only screen and (max-width: 1000px) {
   .section.dragon .section-shader {
     padding: 5rem;
+  }
+}
+
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.dragon .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -378,6 +466,18 @@
 
 .section.recent-launch .section-shader .white-box.recent-launch {
   right: 9rem;
+}
+
+/* 820px */
+@media only screen and (max-width: 820px) {
+  .section.recent-launch .section-shader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section.recent-launch .section-shader .white-box.recent-launch {
+    right: -1.5rem;
+  }
 }
 
 .section.crew {
@@ -698,6 +798,37 @@
   border-radius: 12px;
 }
 
+/* 1250px */
+@media only screen and (max-width: 1250px) {
+  .section.subscription form .input-btn-container input {
+    width: 60%;
+  }
+  .section.subscription form .input-btn-container .submit-subscription-btn {
+    width: 15%;
+  }
+}
+
+/* 1090px */
+@media only screen and (max-width: 1090px) {
+  .section.subscription form .input-btn-container input {
+    width: 70%;
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .section.subscription {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .section.subscription form .input-btn-container input {
+    width: 80%;
+  }
+  .section.subscription form .input-btn-container .submit-subscription-btn {
+    width: 20%;
+  }
+}
+
 footer {
   height: unset;
   background: black;
@@ -725,6 +856,33 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: inherit;
+}
+
+/* 1090px */
+@media only screen and (max-width: 1090px) {
+  footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 17rem;
+    padding-right: 17rem;
+  }
+}
+
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px) {
+  footer ul li {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
 }
 
 .section.about-header {
