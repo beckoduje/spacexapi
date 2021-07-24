@@ -80,3 +80,18 @@
     cursor: pointer;
   }
 }
+
+/* 1200px */
+@media only screen and (max-width: 1200px /*xyrem*/) {
+  .form-container {
+    width: 100%;
+    grid-row-gap: 2.4rem;
+
+    .form-group {
+      label {
+        font-size: 1.5rem;
+        transform: translate(3%, -170%);
+      }
+    }
+  }
+}

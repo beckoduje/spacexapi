@@ -28,3 +28,13 @@
     }
   }
 }
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.falcon-heavy {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

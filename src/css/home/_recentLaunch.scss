@@ -30,3 +30,13 @@
     }
   }
 }
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.recent-launch {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

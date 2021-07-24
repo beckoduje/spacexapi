@@ -32,6 +32,13 @@
   }
 }
 
+/* 1050px */
+@media only screen and (max-width: 1050px /*xyrem*/) {
+  .section.menu {
+    background-size: cover;
+  }
+}
+
 /* 1000px */
 @media only screen and (max-width: 1000px /*xyrem*/) {
   .section.menu {
@@ -39,6 +46,30 @@
       padding: 5rem;
       padding-top: 3rem;
       padding-bottom: 7rem;
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.menu {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      nav {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .section.menu {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }

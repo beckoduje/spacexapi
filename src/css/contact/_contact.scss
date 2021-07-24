@@ -29,7 +29,40 @@
     .section-shader {
       padding: 5rem;
       padding-top: 3rem;
-      padding-bottom: 7rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.contact {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+/* 520px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.contact {
+    .section-shader {
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .section.contact {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
     }
   }
 }

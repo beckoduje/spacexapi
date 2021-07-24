@@ -95,3 +95,31 @@
     padding-bottom: 3rem;
   }
 }
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .nav.sticky-nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .nav {
+    .logo-container {
+      width: 192px;
+      transform: translateY(-3px);
+    }
+
+    .nav-links-container {
+      .hambi-links {
+        .hambi-cont {
+          .hambi-long {
+            width: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

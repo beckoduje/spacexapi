@@ -51,3 +51,11 @@ footer {
     }
   }
 }
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

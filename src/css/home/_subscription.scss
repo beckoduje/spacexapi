@@ -100,3 +100,11 @@
     }
   }
 }
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.subscription {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
