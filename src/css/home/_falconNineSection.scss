@@ -49,3 +49,24 @@
     }
   }
 }
+
+/* 540px */
+@media only screen and (max-width: 540px /*xyrem*/) {
+  .section.falcon-9 {
+    .section-shader {
+      .white-box.falcon-9 {
+        right: 0;
+      }
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.falcon-9 {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

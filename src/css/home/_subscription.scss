@@ -108,3 +108,36 @@
     padding-right: 2rem;
   }
 }
+
+/* 510px */
+@media only screen and (max-width: 510px /*xyrem*/) {
+  .section.subscription {
+    margin-top: 4rem;
+    form {
+      label {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+      }
+      .input-btn-container {
+        flex-direction: column;
+        input {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+        .submit-subscription-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.subscription {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+  }
+}

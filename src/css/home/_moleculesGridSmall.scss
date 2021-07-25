@@ -2,7 +2,7 @@
   display: none;
 }
 
-/* 1000px */
+/* 680px */
 @media only screen and (max-width: 680px /*xyrem*/) {
   .cont.small-size-cont {
     display: flex;
@@ -11,6 +11,33 @@
     .row-cont {
       .molekula:last-child {
         transform: translateY(-88px);
+      }
+    }
+  }
+}
+
+/* 380px */
+@media only screen and (max-width: 380px /*xyrem*/) {
+  .cont.small-size-cont {
+    margin-right: 37px;
+    .row-cont {
+      .molekula:last-child {
+        transform: translateY(-71px);
+      }
+
+      .molekula {
+        margin-right: -37px;
+        width: 160px;
+        height: 139.2px;
+
+        .member-img {
+          width: 70px;
+          height: 70px;
+        }
+
+        .member-name {
+          font-size: 0.9rem;
+        }
       }
     }
   }

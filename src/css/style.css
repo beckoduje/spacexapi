@@ -63,6 +63,14 @@
   }
 }
 
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +210,14 @@
   }
 }
 
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .nav.sticky-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .logo-container svg {
   fill: white;
 }
@@ -301,6 +317,60 @@
 }
 
 /* 650px */
+@media only screen and (max-width: 650px) {
+  .section-info-container {
+    width: 46rem;
+  }
+  .section-info-container .section-info {
+    width: 46rem;
+    padding: 2.5rem;
+  }
+  .section-info-container .section-info h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  .section-info-container .section-info p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .section-info-container .section-info button {
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .section-info-container .white-box {
+    width: 49rem;
+  }
+}
+
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .section-info-container {
+    width: 100%;
+  }
+  .section-info-container .section-info {
+    width: 100%;
+  }
+  .section-info-container .white-box {
+    width: 100%;
+    height: 87%;
+    right: 0;
+    top: 19%;
+  }
+}
+
+/* 410px */
+@media only screen and (max-width: 410px) {
+  .section-info-container .section-info {
+    padding: 2.3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .section-info-container .section-info button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+}
+
 .section.falcon-9 {
   background-image: url("../images/falcon9dark.jpg");
   background-size: cover;
@@ -358,6 +428,21 @@
   }
 }
 
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .section.falcon-9 .section-shader .white-box.falcon-9 {
+    right: 0;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.falcon-9 .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .section.falcon-heavy {
   background-image: url("../images/falconHeavyLaunching.jpg");
   background-size: cover;
@@ -401,6 +486,14 @@
   .section.falcon-heavy .section-shader {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.falcon-heavy .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -454,6 +547,21 @@
   }
 }
 
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .section.starship .section-shader .white-box.starship {
+    right: 0;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.starship .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .section.dragon {
   background-image: url("../images/dragon.jpg");
   background-size: cover;
@@ -496,6 +604,14 @@
   .section.dragon .section-shader {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.dragon .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -549,6 +665,21 @@
   }
 }
 
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .section.recent-launch .section-shader .white-box.recent-launch {
+    right: 0;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.recent-launch .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .section.crew {
   height: unset;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.91)), to(rgba(0, 0, 0, 0.91))), url("../images/moon2.jpg");
@@ -588,6 +719,31 @@
   .section.crew {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+/* 510px */
+@media only screen and (max-width: 510px) {
+  .section.crew {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .section.crew h2 {
+    font-size: 2rem;
+    margin-bottom: 15rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.crew {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  .section.crew h2 {
+    margin-bottom: 13rem;
   }
 }
 
@@ -791,7 +947,7 @@
   display: none;
 }
 
-/* 1000px */
+/* 680px */
 @media only screen and (max-width: 680px) {
   .cont.small-size-cont {
     display: -webkit-box;
@@ -805,6 +961,29 @@
   .cont.small-size-cont .row-cont .molekula:last-child {
     -webkit-transform: translateY(-88px);
             transform: translateY(-88px);
+  }
+}
+
+/* 380px */
+@media only screen and (max-width: 380px) {
+  .cont.small-size-cont {
+    margin-right: 37px;
+  }
+  .cont.small-size-cont .row-cont .molekula:last-child {
+    -webkit-transform: translateY(-71px);
+            transform: translateY(-71px);
+  }
+  .cont.small-size-cont .row-cont .molekula {
+    margin-right: -37px;
+    width: 160px;
+    height: 139.2px;
+  }
+  .cont.small-size-cont .row-cont .molekula .member-img {
+    width: 70px;
+    height: 70px;
+  }
+  .cont.small-size-cont .row-cont .molekula .member-name {
+    font-size: 0.9rem;
   }
 }
 
@@ -914,6 +1093,40 @@
   }
 }
 
+/* 510px */
+@media only screen and (max-width: 510px) {
+  .section.subscription {
+    margin-top: 4rem;
+  }
+  .section.subscription form label {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .section.subscription form .input-btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section.subscription form .input-btn-container input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .section.subscription form .input-btn-container .submit-subscription-btn {
+    width: 100%;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.subscription {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+  }
+}
+
 footer {
   height: unset;
   background: black;
@@ -978,6 +1191,30 @@ footer ul li a {
   }
 }
 
+/* 510px */
+@media only screen and (max-width: 510px) {
+  footer {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  footer ul:not(:last-child) {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .section.about-header {
   background-image: url("../images/earthAtmosphere.jpg");
   background-size: cover;
@@ -1005,11 +1242,18 @@ footer ul li a {
 }
 
 .section.about-header .section-shader nav {
-  margin-bottom: 15vw;
+  margin-bottom: 28vh;
 }
 
 .section.about-header .section-shader .about-message.one {
   margin-bottom: 40rem;
+}
+
+/* 1050px */
+@media only screen and (max-width: 1050px) {
+  .section.about-header .section-shader .about-message.one {
+    margin-bottom: 35rem;
+  }
 }
 
 /* 1000px */
@@ -1018,6 +1262,32 @@ footer ul li a {
     padding: 5rem;
     padding-top: 3rem;
     padding-bottom: 7rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px) {
+  .section.about-header .section-shader {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .section.about-header .section-shader .about-message.one {
+    margin-bottom: 30rem;
+  }
+}
+
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .section.about-header .section-shader .about-message.one {
+    margin-bottom: 25rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .section.about-header .section-shader {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1061,12 +1331,58 @@ footer ul li a {
 
 .about-message .white-box {
   position: absolute;
-  top: -2rem;
+  top: -7%;
   right: 3rem;
   width: 50rem;
-  height: 113%;
+  height: 114%;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 12px;
+}
+
+/* 970px */
+@media only screen and (max-width: 970px) {
+  .about-message {
+    width: 50rem;
+  }
+  .about-message .about-message-text-container {
+    width: 50rem;
+    padding: 3rem;
+    font-size: 1.7rem;
+  }
+  .about-message .white-box {
+    width: 43rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px) {
+  .about-message {
+    width: 46rem;
+  }
+  .about-message .about-message-text-container {
+    width: 46rem;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .about-message .white-box {
+    width: 39rem;
+  }
+}
+
+/* 540px */
+@media only screen and (max-width: 540px) {
+  .about-message {
+    width: 100%;
+  }
+  .about-message .about-message-text-container {
+    width: 100%;
+  }
+  .about-message .white-box {
+    width: 100%;
+    height: 87%;
+    right: 0;
+    top: 19%;
+  }
 }
 
 .section.company-info {
@@ -2271,8 +2587,8 @@ footer ul li a {
   }
 }
 
-/* 480px */
-@media only screen and (max-width: 480px) {
+/* 450px */
+@media only screen and (max-width: 450px) {
   .section.menu .section-shader {
     padding-left: 1rem;
     padding-right: 1rem;

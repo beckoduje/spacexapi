@@ -34,3 +34,29 @@
     padding-right: 2rem;
   }
 }
+
+/* 510px */
+@media only screen and (max-width: 510px /*xyrem*/) {
+  .section.crew {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15rem;
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.crew {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+
+    h2 {
+      margin-bottom: 13rem;
+    }
+  }
+}

@@ -40,3 +40,24 @@
     }
   }
 }
+
+/* 540px */
+@media only screen and (max-width: 540px /*xyrem*/) {
+  .section.recent-launch {
+    .section-shader {
+      .white-box.recent-launch {
+        right: 0;
+      }
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.recent-launch {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

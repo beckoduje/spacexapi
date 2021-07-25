@@ -123,3 +123,11 @@
     }
   }
 }
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .nav.sticky-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
