@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     nav {
       margin-bottom: 28vh;
@@ -67,6 +68,17 @@
     .section-shader {
       .about-message.one {
         margin-bottom: 25rem;
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .section.about-header {
+    .section-shader {
+      .about-message.one {
+        margin-bottom: 20rem;
       }
     }
   }

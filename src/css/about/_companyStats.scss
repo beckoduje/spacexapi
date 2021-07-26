@@ -7,8 +7,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 10rem;
-      padding-bottom: 5rem;
+      padding-top: 15rem;
+      padding-bottom: 2rem;
 
       .company-stats-title {
         display: flex;
@@ -34,7 +34,8 @@
         justify-content: space-between;
 
         .stats-label {
-          flex-basis: 25%;
+          flex-basis: 27%;
+          margin-right: 1rem;
         }
       }
 
@@ -43,8 +44,109 @@
         font-size: 3rem;
         justify-content: center;
 
-        .social-icon {
+        .social-icon:not(:last-child) {
           margin-right: 7rem;
+        }
+      }
+    }
+  }
+}
+
+/* 1200px */
+@media only screen and (max-width: 1200px /*xyrem*/) {
+  .section.company-info {
+    .section-shader {
+      .company-stats-container {
+        .company-stats {
+          font-size: 2.2rem;
+        }
+
+        .social-icons-container {
+          .social-icon:not(:last-child) {
+            margin-right: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 880px */
+@media only screen and (max-width: 880px /*xyrem*/) {
+  .section.company-info {
+    .section-shader {
+      .company-stats-container {
+        .company-stats {
+          font-size: 1.8rem;
+        }
+
+        .social-icons-container {
+          .social-icon:not(:last-child) {
+            margin-right: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.company-info {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      .company-stats-container {
+        padding-top: 13rem;
+        .company-stats-title {
+          .logo-container {
+            width: 260px;
+          }
+        }
+        .social-icons-container {
+          font-size: 2.3rem;
+          .social-icon:not(:last-child) {
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 580px */
+@media only screen and (max-width: 580px /*xyrem*/) {
+  .section.company-info {
+    .section-shader {
+      .company-stats-container {
+        .company-stats {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.company-info {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      .company-stats-container {
+        .company-stats {
+          font-size: 1.4rem;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+
+        .social-icons-container {
+          font-size: 2rem;
+          .social-icon:not(:last-child) {
+            margin-right: 2.3rem;
+          }
         }
       }
     }
