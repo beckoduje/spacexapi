@@ -20,3 +20,50 @@
     }
   }
 }
+
+/* 970px */
+@media only screen and (max-width: 970px /*xyrem*/) {
+  .section.starship-header {
+    .section-shader {
+      h1 {
+        font-size: 6.2rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.starship-header {
+    .section-shader {
+      justify-content: center;
+      h1 {
+        font-size: 5.5rem;
+      }
+
+      h2 {
+        font-size: 1.55rem;
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .section.starship-header {
+    .section-shader {
+      h1 {
+        font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
