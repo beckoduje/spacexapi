@@ -5,6 +5,7 @@ import { getRoadsterData } from "../../API";
 
 export default function RoadsterInfoContainer() {
   const [roadsterInfo, setRoadsterInfo] = useState();
+  const [shrink, setShrink] = useState(false);
 
   useEffect(() => {
     getRoadsterData("").then(function (value) {
@@ -25,8 +26,11 @@ export default function RoadsterInfoContainer() {
           sent into space.
         </p>
         <div className="roadster-info-cards-container">
-          <RoadsterInfoCardOne roadsterInfo={roadsterInfo} />
-          <RoadsterInfoCardTwo roadsterInfo={roadsterInfo} />
+          <RoadsterInfoCardOne shrink={shrink} roadsterInfo={roadsterInfo} />
+          <RoadsterInfoCardTwo
+            setShrink={setShrink}
+            roadsterInfo={roadsterInfo}
+          />
         </div>
       </div>
     </div>

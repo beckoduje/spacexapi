@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RoadsterInfoCardTwo({ roadsterInfo }) {
+export default function RoadsterInfoCardTwo({ roadsterInfo, setShrink }) {
   return (
     <div className="roadster-info-card-wrapper roadster-card-two">
       <div className="roadster-single-stat-cont">

@@ -29,6 +29,47 @@
     p {
       font-size: 1.8rem;
       font-weight: 500;
+      text-align: justify;
+    }
+  }
+}
+
+/* 1250px */
+@media only screen and (max-width: 1250px /*xyrem*/) {
+  .roadster-info-container {
+    .roadster-info-container-shader {
+      padding: 7%;
+    }
+  }
+}
+
+/* 970px */
+@media only screen and (max-width: 970px /*xyrem*/) {
+  .roadster-info-container {
+    .roadster-info-container-shader {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .roadster-info-container {
+    .roadster-info-container-shader {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* 580px */
+@media only screen and (max-width: 580px /*xyrem*/) {
+  .roadster-info-container {
+    .roadster-info-container-shader {
+      padding: 5%;
     }
   }
 }

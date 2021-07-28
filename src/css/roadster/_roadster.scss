@@ -14,7 +14,6 @@
       text-align: center;
       margin-top: 10rem;
       margin-bottom: 8rem;
-      font-weight: 900;
     }
   }
 }
@@ -26,6 +25,52 @@
       padding: 5rem;
       padding-top: 3rem;
       padding-bottom: 7rem;
+    }
+  }
+}
+
+/* 970px */
+@media only screen and (max-width: 970px /*xyrem*/) {
+  .section.roadster {
+    .section-shader {
+      h1 {
+        font-size: 6.2rem;
+      }
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .section.roadster {
+    .section-shader {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      h1 {
+        font-size: 5.5rem;
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px /*xyrem*/) {
+  .section.roadster {
+    .section-shader {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px /*xyrem*/) {
+  .section.roadster {
+    .section-shader {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }

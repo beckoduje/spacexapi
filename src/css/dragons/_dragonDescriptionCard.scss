@@ -35,3 +35,55 @@
     border-radius: 12px;
   }
 }
+
+/* 970px */
+@media only screen and (max-width: 970px /*xyrem*/) {
+  .dragon-description-container {
+    width: 50rem;
+
+    .dragon-description-text-container {
+      width: 50rem;
+      padding: 3rem;
+      font-size: 1.7rem;
+    }
+
+    .white-box {
+      width: 43rem;
+    }
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px /*xyrem*/) {
+  .dragon-description-container {
+    width: 46rem;
+
+    .dragon-description-text-container {
+      width: 46rem;
+      padding: 2.5rem;
+      font-size: 1.5rem;
+    }
+
+    .white-box {
+      width: 39rem;
+    }
+  }
+}
+
+/* 540px */
+@media only screen and (max-width: 540px /*xyrem*/) {
+  .dragon-description-container {
+    width: 100%;
+
+    .dragon-description-text-container {
+      width: 100%;
+    }
+
+    .white-box {
+      width: 100%;
+      height: 87%;
+      right: 0;
+      top: 19%;
+    }
+  }
+}
