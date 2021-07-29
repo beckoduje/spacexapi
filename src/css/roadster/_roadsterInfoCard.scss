@@ -47,27 +47,17 @@
 
     .roadster-single-stat-cont {
       display: flex;
-      // flex-wrap: wrap;
       justify-content: space-between;
       margin-bottom: 1rem;
       font-size: 1.8rem;
       font-weight: 900;
       color: rgba(15, 15, 15, 0.92);
 
-      // div:not(:last-child) {
-      //   margin-right: 2rem;
-      // }
-
       .orbit-type {
         text-transform: capitalize;
       }
     }
   }
-
-  // ovako radi
-  // &:hover .roadster-info-card-wrapper:not(:hover) {
-  //   transform: scale(0.9);
-  // }
 }
 
 /* 1350px */
@@ -86,6 +76,11 @@
   .roadster-info-cards-container {
     .roadster-info-card-wrapper {
       width: 63%;
+      &.roadster-card-one {
+        &.shrink {
+          transform: scale(1);
+        }
+      }
       &.roadster-card-two {
         width: 60%;
         right: -2rem;

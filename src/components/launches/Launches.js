@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../nav/Nav";
 import NextLaunch from "./nextLaunch/NextLaunch";
 import LatestLaunch from "./latestLaunch/LatestLaunch";
 
 export default function Launches(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="launches-wrapper">
       <Nav

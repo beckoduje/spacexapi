@@ -1,8 +1,14 @@
 import React from "react";
 
-export default function RoadsterInfoCardOne({ roadsterInfo }) {
+export default function RoadsterInfoCardOne({ roadsterInfo, shrink }) {
   return (
-    <div className="roadster-info-card-wrapper roadster-card-one">
+    <div
+      className={
+        shrink
+          ? `roadster-info-card-wrapper roadster-card-one shrink`
+          : `roadster-info-card-wrapper roadster-card-one`
+      }
+    >
       <div className="roadster-single-stat-cont">
         <div>Launch date:</div>
         <div>{roadsterInfo ? roadsterInfo.launch_date_utc : ""}</div>

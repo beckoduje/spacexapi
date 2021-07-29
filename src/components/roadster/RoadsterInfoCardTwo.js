@@ -2,7 +2,15 @@ import React from "react";
 
 export default function RoadsterInfoCardTwo({ roadsterInfo, setShrink }) {
   return (
-    <div className="roadster-info-card-wrapper roadster-card-two">
+    <div
+      className="roadster-info-card-wrapper roadster-card-two"
+      onMouseEnter={() => {
+        setShrink(true);
+      }}
+      onMouseLeave={() => {
+        setShrink(false);
+      }}
+    >
       <div className="roadster-single-stat-cont">
         <div>Orbit type:</div>
         <div className="orbit-type">

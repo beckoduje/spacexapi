@@ -3773,6 +3773,53 @@ footer ul li a {
   font-weight: 700;
 }
 
+/* 1000px */
+@media only screen and (max-width: 1000px) {
+  .crew-wrapper nav {
+    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  .crew-wrapper .section.crew h2 {
+    font-size: 3rem;
+    margin-bottom: 17rem;
+  }
+}
+
+/* 800px */
+@media only screen and (max-width: 800px) {
+  .crew-wrapper .section.crew h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15rem;
+  }
+}
+
+/* 650px */
+@media only screen and (max-width: 650px) {
+  .crew-wrapper nav {
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+}
+
+/* 510px */
+@media only screen and (max-width: 510px) {
+  .crew-wrapper .section.crew h2 {
+    font-size: 2.1rem;
+    margin-bottom: 13rem;
+  }
+}
+
+/* 450px */
+@media only screen and (max-width: 450px) {
+  .crew-wrapper nav {
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+}
+
 .section.menu {
   height: 100vh;
   background-image: url("../images/earthAndSun.png");
@@ -4087,6 +4134,10 @@ footer ul li a {
 @media only screen and (max-width: 1250px) {
   .roadster-info-cards-container .roadster-info-card-wrapper {
     width: 63%;
+  }
+  .roadster-info-cards-container .roadster-info-card-wrapper.roadster-card-one.shrink {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   .roadster-info-cards-container .roadster-info-card-wrapper.roadster-card-two {
     width: 60%;

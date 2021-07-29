@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "../nav/Nav";
 import MissionSection from "./missionSection/MissionSection";
 import FalconNineSection from "./FalconNineSection";
@@ -11,7 +11,9 @@ import Subscription from "./Subscription";
 import Footer from "./Footer";
 
 export default function Home(props) {
-  // console.log(props);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Nav
