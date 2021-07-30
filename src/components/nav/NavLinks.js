@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function NavLinks({ menuState, setMenuState }) {
-  // console.log(props);
   return (
     <div className="nav-links-container">
       <ul className="nav-links-list">

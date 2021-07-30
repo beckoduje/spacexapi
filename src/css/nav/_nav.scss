@@ -64,18 +64,20 @@
 }
 
 .nav.sticky-nav {
-  display: none;
+  display: flex;
   position: fixed;
   background: black;
   z-index: 100;
   padding: 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  height: 0;
   transition: height 1s;
 }
 
 .nav.sticky-nav.active {
   display: flex;
+  height: unset;
 }
 
 /* 1200px */
