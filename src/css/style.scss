@@ -63,6 +63,10 @@ body {
   background: black;
 }
 
+#root {
+  overflow: hidden;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
