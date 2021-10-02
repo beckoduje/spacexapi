@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function Startship() {
+  useEffect(() => {
+    ScrollReveal().reveal(".starship-reveal", {
+      delay: 500,
+      distance: "100px",
+      origin: "right",
+    });
+  }, []);
+
   return (
     <section className="section starship">
       <div className="section-shader">
-        <div className="section-info-container">
+        <div className="section-info-container starship-reveal">
           <div className="section-info starship">
             <h2>STARSHIP</h2>
             <p>

@@ -44,6 +44,16 @@
         font-size: 3rem;
         justify-content: center;
 
+        .social-icon {
+          color: white;
+          transition: color 0.2s;
+          cursor: pointer;
+
+          &:hover {
+            color: rgba($color: #fff, $alpha: 0.6);
+          }
+        }
+
         .social-icon:not(:last-child) {
           margin-right: 7rem;
         }

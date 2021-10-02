@@ -118,6 +118,12 @@
 .nav .nav-links-container .nav-links-list li a {
   text-decoration: none;
   color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav .nav-links-container .nav-links-list li a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .nav .nav-links-container .hambi-links {
@@ -160,6 +166,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
   position: fixed;
   background: black;
   z-index: 100;
@@ -167,15 +177,18 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   height: 0;
-  -webkit-transition: height 1s;
-  transition: height 1s;
+  -webkit-transition: height 0.5s, opacity 0.5s, visibility 0s, -webkit-transform 0.5s;
+  transition: height 0.5s, opacity 0.5s, visibility 0s, -webkit-transform 0.5s;
+  transition: height 0.5s, opacity 0.5s, visibility 0s, transform 0.5s;
+  transition: height 0.5s, opacity 0.5s, visibility 0s, transform 0.5s, -webkit-transform 0.5s;
 }
 
 .nav.sticky-nav.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: unset;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  height: auto;
 }
 
 /* 1200px */
@@ -394,6 +407,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .section.falcon-9 .section-shader button {
@@ -1056,6 +1070,7 @@
   width: 10%;
   height: 5.5rem;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 /* 1250px */
@@ -1158,6 +1173,12 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+footer ul li a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* 1090px */
@@ -1618,6 +1639,17 @@ footer ul li a {
           justify-content: center;
 }
 
+.section.company-info .section-shader .company-stats-container .social-icons-container .social-icon {
+  color: white;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.section.company-info .section-shader .company-stats-container .social-icons-container .social-icon:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .section.company-info .section-shader .company-stats-container .social-icons-container .social-icon:not(:last-child) {
   margin-right: 7rem;
 }
@@ -1856,6 +1888,7 @@ footer ul li a {
   outline: none;
   background: none;
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .section.falcon-nine-stats .section-shader .slides-wrapper .slide-btn--left {
@@ -2268,6 +2301,7 @@ footer ul li a {
   outline: none;
   background: none;
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .section.falcon-heavy-stats .section-shader .slides-wrapper .slide-btn--left {
@@ -2585,6 +2619,7 @@ footer ul li a {
   outline: none;
   background: none;
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .section.starship-stats .section-shader .slides-wrapper .slide-btn--left {
@@ -3013,6 +3048,7 @@ footer ul li a {
   outline: none;
   background: none;
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .section.dragon-stats .section-shader .slides-wrapper .slide-btn--left {
@@ -3534,6 +3570,7 @@ footer ul li a {
   outline: none;
   background: none;
   font-size: 5rem;
+  cursor: pointer;
 }
 
 .section.latest-launch .section-shader .slides-wrapper .slide-btn--left {
@@ -3932,6 +3969,12 @@ footer ul li a {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.menu-links-container li a:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .section.roadster {

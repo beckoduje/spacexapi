@@ -19,6 +19,11 @@
       font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
+      transition: color 0.2s;
+
+      &:hover {
+        color: rgba($color: #fff, $alpha: 0.6);
+      }
     }
   }
 }

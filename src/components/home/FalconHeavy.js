@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function FalconHeavy() {
+  useEffect(() => {
+    ScrollReveal().reveal(".falcon-heavy-reveal", {
+      delay: 500,
+      distance: "100px",
+      origin: "left",
+    });
+  }, []);
+
   return (
     <section className="section falcon-heavy">
       <div className="section-shader">
-        <div className="section-info-container">
+        <div className="section-info-container falcon-heavy-reveal">
           <div className="section-info falcon-heavy">
             <h2>FALCON HEAVY</h2>
             <p>

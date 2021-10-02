@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getRocketData } from "../../../API.js";
+import ScrollReveal from "scrollreveal";
 
 export default function FalconHeavyDescriptionCard() {
   const [rocketInfo, setRocketInfo] = useState();
@@ -10,8 +11,16 @@ export default function FalconHeavyDescriptionCard() {
     });
   }, []);
 
+  useEffect(() => {
+    ScrollReveal().reveal(".falcon-heavy-description-reveal", {
+      delay: 900,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
-    <div className="rocket-description-container">
+    <div className="rocket-description-container falcon-heavy-description-reveal">
       <div className="rocket-description-text-container">
         <p className="rocket-description-text">
           {rocketInfo ? rocketInfo[2].description : ""}

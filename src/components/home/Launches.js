@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function Launches() {
+  useEffect(() => {
+    ScrollReveal().reveal(".launches-reveal", {
+      delay: 500,
+      distance: "100px",
+      origin: "right",
+    });
+  }, []);
+
   return (
     <section className="section recent-launch">
       <div className="section-shader">
-        <div className="section-info-container">
+        <div className="section-info-container launches-reveal">
           <div className="section-info recent-launch">
             <h2>LAUNCHES</h2>
             <p>

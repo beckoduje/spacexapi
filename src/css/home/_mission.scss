@@ -1,11 +1,9 @@
 .section-info-container {
   position: relative;
   display: block;
-  // width: 52rem;
   width: 57rem;
 
   .section-info {
-    // width: 52rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,18 +42,6 @@
         color: inherit;
       }
     }
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   height: 113%;
-    //   width: 45rem;
-    //   background: rgba(255, 255, 255, 0.24);
-    //   border-radius: 12px;
-    //   top: -2rem;
-    //   right: -2rem;
-    //   z-index: 1;
-    // }
   }
 
   .white-box {

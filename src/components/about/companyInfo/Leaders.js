@@ -3,6 +3,7 @@ import gwynneProfileImg from "../../../images/GwynneShotwell.jpg";
 import muskProfileImg from "../../../images/elon-musk.jpg";
 import mullerProfileImg from "../../../images/tom-muller.jpg";
 import { getCompanyInfoData } from "../../../API.js";
+import ScrollReveal from "scrollreveal";
 
 export default function Leaders() {
   const [companyInfo, setCompanyInfo] = useState();
@@ -13,8 +14,16 @@ export default function Leaders() {
     });
   }, []);
 
+  useEffect(() => {
+    ScrollReveal().reveal(".leaders-reveal", {
+      delay: 500,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
-    <div className="leaders-container">
+    <div className="leaders-container leaders-reveal">
       <div className="leader">
         <figure>
           <img

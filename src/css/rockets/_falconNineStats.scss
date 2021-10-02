@@ -29,9 +29,6 @@
         justify-content: center;
         transition: transform 1s;
 
-        &.slider-one {
-          // background: black;
-        }
         &.slider-two {
           transform: translateX(100%);
         }
@@ -71,10 +68,6 @@
             .engine-name:first-letter {
               text-transform: capitalize;
             }
-
-            // div:last-child {
-            //   text-align: end;
-            // }
           }
         }
       }
@@ -87,6 +80,7 @@
         outline: none;
         background: none;
         font-size: 5rem;
+        cursor: pointer;
 
         &--left {
           left: 6%;

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function Footer() {
+  useEffect(() => {
+    ScrollReveal().reveal(".footer-reveal", {
+      delay: 500,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
-    <footer>
+    <footer className="footer-reveal">
       <ul>
         <li>SPACEX</li>
         <li>California</li>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getCrewData } from "../../../API.js";
+import ScrollReveal from "scrollreveal";
 
 export default function MoleculesGridSmall() {
   const [crewInfo, setCrewInfo] = useState();
@@ -9,8 +10,17 @@ export default function MoleculesGridSmall() {
       setCrewInfo(value);
     });
   }, []);
+
+  useEffect(() => {
+    ScrollReveal().reveal(".molecule-reveal", {
+      delay: 500,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
-    <div className="cont small-size-cont">
+    <div className="cont small-size-cont molecule-reveal">
       <div className="row-cont">
         <div className="molekula">
           <div className="member-img mi-1" />

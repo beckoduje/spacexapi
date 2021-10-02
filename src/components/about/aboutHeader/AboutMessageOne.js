@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 // iz librarya
 import { useInView } from "react-intersection-observer";
@@ -17,8 +18,16 @@ export default function AboutMessageOne(props) {
     }
   }, [inView]);
 
+  useEffect(() => {
+    ScrollReveal().reveal(".about-msg-one-reveal", {
+      delay: 500,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
+
   return (
-    <div ref={ref} className="about-message one">
+    <div ref={ref} className="about-message one about-msg-one-reveal">
       <div className="about-message-text-container">
         <p className="about-message-text">
           “You want to wake up in the morning and think the future is going to

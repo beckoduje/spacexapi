@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Mission() {
   return (
-    <div className="section-info-container">
+    <div className="section-info-container mission-reveal">
       <div className="section-info mission">
         <h2>MAKING HUMANITY MULTIPLANETARY</h2>
         <p>

@@ -18,6 +18,11 @@ footer {
       a {
         text-decoration: none;
         color: inherit;
+        transition: color 0.2s;
+
+        &:hover {
+          color: rgba($color: #fff, $alpha: 0.6);
+        }
       }
     }
   }

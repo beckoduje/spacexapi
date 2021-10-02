@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
+
+// // iz librarya
+// import { useInView } from "react-intersection-observer";
 
 export default function FalconNineSection() {
+  // const [show, setShow] = useState(false);
+
+  // const { ref, inView, entry } = useInView({
+  //   threshold: 0.7,
+  // });
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     setShow(true);
+  //   }
+  // }, [inView]);
+
+  useEffect(() => {
+    ScrollReveal().reveal(".falcon-9-reveal", {
+      delay: 500,
+      distance: "100px",
+      origin: "right",
+    });
+  }, []);
+
   return (
     <section className="section falcon-9">
       <div className="section-shader">
-        <div className="section-info-container">
+        {/* <div
+          className={
+            show ? "section-info-container show" : "section-info-container"
+          }
+          ref={ref}
+        > */}
+        <div className="section-info-container falcon-9-reveal">
           <div className="section-info falcon-9">
             <h2>FALCON 9</h2>
             <p>

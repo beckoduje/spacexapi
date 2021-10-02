@@ -1,17 +1,17 @@
-import React from "react";
-// import { getDragonsData } from "../../API.js";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 export default function DragonDescriptionCard() {
-  // const [dragonsInfo, setDragonsInfo] = useState();
-
-  // useEffect(() => {
-  //   getDragonsData("").then(function (value) {
-  //     setDragonsInfo(value);
-  //   });
-  // }, []);
+  useEffect(() => {
+    ScrollReveal().reveal(".dragon-description-reveal", {
+      delay: 900,
+      distance: "50px",
+      origin: "bottom",
+    });
+  }, []);
 
   return (
-    <div className="dragon-description-container">
+    <div className="dragon-description-container dragon-description-reveal">
       <div className="dragon-description-text-container">
         <p className="dragon-description-text">
           The Dragon spacecraft is capable of carrying up to 7 passengers to and

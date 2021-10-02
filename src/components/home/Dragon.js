@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function Dragon() {
+  useEffect(() => {
+    ScrollReveal().reveal(".dragon-reveal", {
+      delay: 500,
+      distance: "100px",
+      origin: "left",
+    });
+  }, []);
   return (
     <section className="section dragon">
       <div className="section-shader">
-        <div className="section-info-container">
+        <div className="section-info-container dragon-reveal">
           <div className="section-info dragon">
             <h2>DRAGON</h2>
             <p>
